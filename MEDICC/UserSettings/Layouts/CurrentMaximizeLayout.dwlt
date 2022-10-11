@@ -365,9 +365,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 67.5, y: 86}
-      snapOffsetDelta: {x: -17.900002, y: 0}
-      snapCorner: 0
+      snapOffset: {x: -49.6, y: 86}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
       id: Orientation
       index: 0
       layout: 4
@@ -555,9 +555,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.12811461, y: 0.090611905, z: -0.011754083, w: -0.98754144}
   m_Size:
-    m_Target: 1.2429748
+    m_Target: 1.9303018
     speed: 2
-    m_Value: 1.2429748
+    m_Value: 1.9303018
   m_Ortho:
     m_Target: 0
     speed: 2
