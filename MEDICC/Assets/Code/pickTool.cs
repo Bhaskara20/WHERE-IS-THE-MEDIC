@@ -10,11 +10,11 @@ public class pickTool : MonoBehaviour
 
     void Update()
     {
-            if (inReach && Input.GetKeyUp("space"))
-            {
-                holdit();
+        if (inReach && Input.GetKeyUp("space"))
+        {
+            holdit();
 
-            }
+        }
         
     }
 
@@ -28,6 +28,13 @@ public class pickTool : MonoBehaviour
         //reach.SetActive(false);
         
     }
+    public void dropIt()
+    {
+        this.transform.parent = null;
+        //GetComponent<Rigidbody>().useGravity = true;
+        //GetComponent<Rigidbody>().drag = 0;
+        //GetComponent<Rigidbody>().isKinematic = false;
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -37,11 +44,15 @@ public class pickTool : MonoBehaviour
             //openText.SetActive(true);
         }
 
-        if (other.gameObject.tag == "Patient")
+        /*if (other.gameObject.tag == "Patient")
         {
-            gameObject.SetActive(false);
+            if (Input.GetKeyUp("space"))
+            {
+                gameObject.SetActive(false);
+            }
             
-        }
+            
+        }*/
     }
 
     void OnTriggerExit(Collider other)
