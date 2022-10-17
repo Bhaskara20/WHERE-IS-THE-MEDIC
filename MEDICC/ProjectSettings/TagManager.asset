@@ -10,6 +10,9 @@ TagManager:
   - tensimeter
   - stetoscope
   - thermometer
+  - bloodLab
+  - pcrLab
+  - x-ray
   layers:
   - Default
   - TransparentFX

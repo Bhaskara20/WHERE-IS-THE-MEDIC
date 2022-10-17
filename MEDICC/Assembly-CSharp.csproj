@@ -129,6 +129,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
+    <Compile Include="Assets\Code\pickPatient.cs" />
+    <Compile Include="Assets\Code\XRAY.cs" />
+    <Compile Include="Assets\Code\PCR.cs" />
+    <Compile Include="Assets\Code\bloodTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -27,6 +27,7 @@ public class Patient : MonoBehaviour
     public GameObject stetosbar;
 
     public TextMeshProUGUI result;
+    //public GameObject text;
 
     //public GameObject holder;
     // Start is called before the first frame update
@@ -123,15 +124,22 @@ public class Patient : MonoBehaviour
         {
             Debug.Log("Cek darah");
             result.text = "Harus Cek Darah";
+            this.GetComponent<pickPatient>().enabled = true;
+            this.GetComponent<bloodTest>().enabled = true;
+            
         }else if(randomNum == 2)
         {
             Debug.Log("Test PCR");
             result.text = "Harus Test PCR";
+            this.GetComponent<pickPatient>().enabled = true;
+            this.GetComponent<PCR>().enabled = true;
         }
         else if(randomNum == 3)
         {
             Debug.Log("Harus X-RAY");
             result.text = "Harus X-RAY";
+            this.GetComponent<pickPatient>().enabled = true;
+            this.GetComponent<XRAY>().enabled = true;
         }
     }
 }
