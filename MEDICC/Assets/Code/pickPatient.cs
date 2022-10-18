@@ -5,6 +5,8 @@ using UnityEngine.WSA;
 
 public class pickPatient : MonoBehaviour
 {
+    public BoxCollider patient;
+
     public Transform carry;
     public bool inReach;
     public GameObject reach;
@@ -12,7 +14,7 @@ public class pickPatient : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        patient = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -20,9 +22,15 @@ public class pickPatient : MonoBehaviour
     {
         if (inReach && Input.GetKeyUp("space"))
         {
+            thinmode();
             carryit();
 
         }
+    }
+
+    void thinmode()
+    {
+        patient.size = new Vector3(1f, 1f, 2.87f);
     }
 
     private void carryit()

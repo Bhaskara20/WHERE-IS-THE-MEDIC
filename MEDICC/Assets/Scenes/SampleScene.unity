@@ -969,7 +969,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24658
+  m_Name: pb_Mesh24684
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2349,7 +2349,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24824
+  m_Name: pb_Mesh24862
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5034,7 +5034,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24588
+  m_Name: pb_Mesh24614
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5198,7 +5198,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24698
+  m_Name: pb_Mesh24726
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5362,7 +5362,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24552
+  m_Name: pb_Mesh24576
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6012,6 +6012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeab868e2160f1d4591e35555377c648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patient: {fileID: 1803682716}
   carry: {fileID: 62268134}
   inReach: 0
   reach: {fileID: 1845734628}
@@ -6028,6 +6029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da55be27df2ab6246a721de6ecebaa7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isReady: 0
 --- !u!114 &1803682724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6040,6 +6042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c255cd513a55c5e459af3ce162e32e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isReady: 0
 --- !u!114 &1803682725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6052,6 +6055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58e3a6ddbd83f5144a1d57f32216cc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isReady: 0
 --- !u!1 &1845734628
 GameObject:
   m_ObjectHideFlags: 0

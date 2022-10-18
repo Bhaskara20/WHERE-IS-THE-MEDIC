@@ -1,25 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class XRAY : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isReady;
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (isReady && Input.GetKeyUp("space"))
+        {
+            //holdit();
+            xrayTest();
+
+        }
     }
+
+    void xrayTest()
+    {
+        Debug.Log("Sedang dilakukan test Rontgen");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "x-ray")
         {
-            Debug.Log("Sedang dilakukan test Rontgen");
+            isReady = true;
+            //Debug.Log("Sedang dilakukan test Rontgen");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "x-ray")
+        {
+            isReady = false;
+            //Debug.Log("Sedang dilakukan test Rontgen");
         }
     }
 }

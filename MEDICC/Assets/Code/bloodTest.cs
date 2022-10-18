@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class bloodTest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isReady;
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (isReady && Input.GetKeyUp("space"))
+        {
+            //holdit();
+            blooodTest();
+
+        }
+    }
+    void blooodTest()
+    {
+        Debug.Log("Sedang dilakukan test darah");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "bloodLab")
         {
-            Debug.Log("Sedang test darah");
+            isReady = true;
 
 
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "bloodLab")
+        {
+            isReady = false;
+            //Debug.Log("Sedang dilakukan test Rontgen");
         }
     }
 }

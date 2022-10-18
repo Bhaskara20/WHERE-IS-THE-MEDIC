@@ -4,25 +4,40 @@ using UnityEngine;
 
 public class PCR : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isReady;
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (isReady && Input.GetKeyUp("space"))
+        {
+            //holdit();
+            pcrTest();
+
+        }
+    }
+
+    void pcrTest()
+    {
+        Debug.Log("Sedang dilakukan test PCR");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "pcrLab")
         {
-            Debug.Log("Sedang test PCR");
+            isReady = true;
 
 
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "pcrLab")
+        {
+            isReady = false;
+            //Debug.Log("Sedang dilakukan test Rontgen");
         }
     }
 }
