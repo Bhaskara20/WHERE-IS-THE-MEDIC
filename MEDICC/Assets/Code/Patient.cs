@@ -9,10 +9,12 @@ public class Patient : MonoBehaviour
     public GameObject tensi;
     public GameObject thermo;
     public GameObject stetos;
+    //public GameObject player;
 
     public Transform tensiPort;
     public Transform thermoPort;
     public Transform stetoPort;
+    //public Transform hidepoint;
 
     public bool readyTensi;
     public bool readyThermo;
