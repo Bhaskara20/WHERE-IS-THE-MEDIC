@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BloodTimer : MonoBehaviour
 {
+    public GameObject timerObject;
     public GameObject player;
     public Transform homePoint;
 
@@ -22,6 +23,9 @@ public class BloodTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        timerObject.SetActive(true);
         fix += Time.deltaTime;
         float time = gameTime - fix;
 
@@ -32,7 +36,14 @@ public class BloodTimer : MonoBehaviour
         {
             stopTimer = true;
             player.transform.position = homePoint.position;
+            timerObject.SetActive(false);
+
+ 
+
             GetComponent<BloodTimer>().enabled = false;
+
+           
+
             Debug.Log("selesai!");
         }
 
@@ -40,5 +51,7 @@ public class BloodTimer : MonoBehaviour
         {
             timer.value = time;
         }
+
+        Debug.Log(time);
     }
 }

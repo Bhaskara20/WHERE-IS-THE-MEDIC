@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PcrTimer : MonoBehaviour
 {
-
+    public GameObject timerObject;
     public GameObject player;
     public Transform homePoint;
 
@@ -23,6 +23,7 @@ public class PcrTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timerObject.SetActive(true);
         fix += Time.deltaTime;
         float time = gameTime - fix;
 
@@ -33,6 +34,8 @@ public class PcrTimer : MonoBehaviour
         {
             stopTimer = true;
             player.transform.position = homePoint.position;
+            timerObject.SetActive(false);
+            
             GetComponent<PcrTimer>().enabled = false;
             Debug.Log("selesai!");
         }

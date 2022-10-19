@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class XrayTimer : MonoBehaviour
 {
+    public GameObject timerObject;
     public GameObject player;
     public Transform homePoint;
 
@@ -22,6 +23,7 @@ public class XrayTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timerObject.SetActive(true);
         fix += Time.deltaTime;
         float time = gameTime - fix;
 
@@ -32,6 +34,8 @@ public class XrayTimer : MonoBehaviour
         {
             stopTimer = true;
             player.transform.position = homePoint.position;
+            timerObject.SetActive(false);
+            
             GetComponent<XrayTimer>().enabled = false;
             Debug.Log("selesai!");
         }
