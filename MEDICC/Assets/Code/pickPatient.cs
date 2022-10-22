@@ -6,11 +6,14 @@ using UnityEngine.WSA;
 public class pickPatient : MonoBehaviour
 {
     public BoxCollider patient;
+    //public BoxCollider bed;
 
     public Transform carry;
     public bool inReach;
     public GameObject reach;
     public GameObject text;
+
+    public Transform sleepPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +49,13 @@ public class pickPatient : MonoBehaviour
 
     }
 
+    public void dropIt()
+    {
+        this.transform.parent = null;
+        this.transform.position = sleepPos.position;
+        this.transform.rotation = sleepPos.rotation;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Reach")
@@ -53,6 +63,7 @@ public class pickPatient : MonoBehaviour
             inReach = true;
             //openText.SetActive(true);
         }
+
 
         /*if (other.gameObject.tag == "Patient")
         {

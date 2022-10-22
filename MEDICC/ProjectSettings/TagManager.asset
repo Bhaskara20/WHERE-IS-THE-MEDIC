@@ -13,6 +13,7 @@ TagManager:
   - bloodLab
   - pcrLab
   - x-ray
+  - bed
   layers:
   - Default
   - TransparentFX
