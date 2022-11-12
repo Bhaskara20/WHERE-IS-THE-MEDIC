@@ -14,6 +14,7 @@ TagManager:
   - pcrLab
   - x-ray
   - bed
+  - pharmacy
   layers:
   - Default
   - TransparentFX

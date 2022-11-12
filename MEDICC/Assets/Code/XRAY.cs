@@ -76,6 +76,7 @@ public class XRAY : MonoBehaviour
         if (randomNum == 1)
         {
             Debug.Log("Butuh obat biru");
+            this.GetComponent<drinkBlue>().enabled = true;
             //result.text = "Harus Cek Darah";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<bloodTest>().enabled = true;
@@ -84,6 +85,7 @@ public class XRAY : MonoBehaviour
         else if (randomNum == 2)
         {
             Debug.Log("Butuh obat merah");
+            this.GetComponent<drinkRed>().enabled = true;
             //result.text = "Harus Test PCR";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<PCR>().enabled = true;
@@ -91,6 +93,7 @@ public class XRAY : MonoBehaviour
         else if (randomNum == 3)
         {
             Debug.Log("Butuh obat kuning");
+            this.GetComponent<drinkYellow>().enabled = true;
             //result.text = "Harus X-RAY";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<XRAY>().enabled = true;

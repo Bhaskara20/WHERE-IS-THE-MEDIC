@@ -13,6 +13,10 @@ public class pickPatient : MonoBehaviour
     public GameObject reach;
     public GameObject text;
 
+    public GameObject bed;
+    public bool mustDrop;
+
+    public bool isCarried;
     public Transform sleepPos;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +32,12 @@ public class pickPatient : MonoBehaviour
             thinmode();
             carryit();
 
+        }
+
+        if (mustDrop && Input.GetKeyUp("space"))
+        {
+            dropIt();
+            this.enabled = false;
         }
     }
 
@@ -45,15 +55,20 @@ public class pickPatient : MonoBehaviour
         this.transform.rotation = carry.rotation;
         this.transform.parent = GameObject.Find("patientCarry").transform;
         text.SetActive(false);
+
+        isCarried = true;
         //reach.SetActive(false);
 
     }
 
     public void dropIt()
     {
+        Debug.Log("dropIt func called");
         this.transform.parent = null;
         this.transform.position = sleepPos.position;
         this.transform.rotation = sleepPos.rotation;
+        isCarried = false;
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -64,6 +79,17 @@ public class pickPatient : MonoBehaviour
             //openText.SetActive(true);
         }
 
+        if (other.gameObject.tag == "bed")
+        {
+            if (isCarried == true)
+            {
+                mustDrop = true;
+            }else if(isCarried == false)
+            {
+                mustDrop = false;
+            }
+            
+        }
 
         /*if (other.gameObject.tag == "Patient")
         {
@@ -82,6 +108,11 @@ public class pickPatient : MonoBehaviour
         {
             inReach = false;
             //openText.SetActive(false);
+        }
+
+        if (other.gameObject.tag == "bed")
+        {
+            mustDrop = false;
         }
     }
 }
