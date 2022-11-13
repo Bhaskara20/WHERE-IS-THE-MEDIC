@@ -37,6 +37,7 @@ public class pickPatient : MonoBehaviour
         if (mustDrop && Input.GetKeyUp("space"))
         {
             dropIt();
+            normalMode();
             this.enabled = false;
         }
     }
@@ -44,6 +45,11 @@ public class pickPatient : MonoBehaviour
     void thinmode()
     {
         patient.size = new Vector3(1f, 1f, 2.87f);
+    }
+
+    void normalMode()
+    {
+        patient.size = new Vector3(2.877758f, 4.344532f, 1.972594f);
     }
 
     private void carryit()
