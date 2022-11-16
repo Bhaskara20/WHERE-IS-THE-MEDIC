@@ -15,6 +15,8 @@ TagManager:
   - x-ray
   - bed
   - pharmacy
+  - red
+  - blue
   layers:
   - Default
   - TransparentFX
