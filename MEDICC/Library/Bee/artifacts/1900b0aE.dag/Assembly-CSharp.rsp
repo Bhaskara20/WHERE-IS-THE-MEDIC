@@ -371,6 +371,7 @@
 "Assets/Code/PCR.cs"
 "Assets/Code/PcrTimer.cs"
 "Assets/Code/pharmacy.cs"
+"Assets/Code/pickCrushed.cs"
 "Assets/Code/pickIngridient.cs"
 "Assets/Code/pickPatient.cs"
 "Assets/Code/pickTool.cs"

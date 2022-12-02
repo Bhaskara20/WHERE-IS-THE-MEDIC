@@ -18,6 +18,13 @@ public class mortar : MonoBehaviour
 
     public GameObject redIngridient;
     public GameObject blueIngridient;
+
+    public GameObject crushedRed;
+    public GameObject crushedBlue;
+
+    public GameObject crushedSpawner;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +41,8 @@ public class mortar : MonoBehaviour
             redIngridient.GetComponent<pickIngridient>().dropIt();
             redIngridient.transform.position = redPort.position;
             redIngridient.transform.rotation = redPort.rotation;
-
+            red = true;
+            StartCoroutine(crushing());
         }
 
         if(isBlueReady && Input.GetKeyUp("space"))
@@ -44,8 +52,32 @@ public class mortar : MonoBehaviour
             blueIngridient.GetComponent<pickIngridient>().dropIt();
             blueIngridient.transform.position = bluePort.position;
             blueIngridient.transform.rotation = bluePort.rotation;
+            blue = true;
+            StartCoroutine(crushing());
         }
+
+       
     }
+
+    private IEnumerator crushing()
+    {
+        Debug.Log("Crushing the ingridient....");
+        yield return new WaitForSeconds(3);
+        if (red == true)
+        {
+            Debug.Log("red ingridient was crushed!");
+            redPutted.SetActive(false);
+            Instantiate(crushedRed, crushedSpawner.transform.position, Quaternion.identity);
+        }else if (blue == true)
+        {
+            Debug.Log("blue ingridient was crushed!");
+            bluePutted.SetActive(false);
+            Instantiate(crushedBlue, crushedSpawner.transform.position, Quaternion.identity);
+        }
+
+    }
+
+   
 
     private void OnTriggerEnter(Collider other)
     {
