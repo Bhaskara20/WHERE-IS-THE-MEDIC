@@ -6,7 +6,10 @@ public class pickCrushed : MonoBehaviour
 {
     public Transform holder;
     public bool inReach;
+
     public GameObject reach;
+    public bool isReady4boil;
+    //public BoxCollider powder;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,12 @@ public class pickCrushed : MonoBehaviour
            holdit();
 
         }
+
+        if(isReady4boil && Input.GetKeyUp("space"))
+        {
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
+        }
     }
 
     private void holdit()
@@ -37,6 +46,11 @@ public class pickCrushed : MonoBehaviour
 
     }
 
+    public void dropp()
+    {
+        Destroy(gameObject);
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Reach")
@@ -45,6 +59,11 @@ public class pickCrushed : MonoBehaviour
             //openText.SetActive(true);
         }
 
+        if(other.gameObject.tag == "couldron")
+        {
+            isReady4boil = true;
+            
+        }
         /*if (other.gameObject.tag == "Patient")
         {
             if (Input.GetKeyUp("space"))

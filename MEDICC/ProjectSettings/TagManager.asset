@@ -17,6 +17,12 @@ TagManager:
   - pharmacy
   - red
   - blue
+  - bluePowder
+  - redPowder
+  - couldron
+  - yellowSyrup
+  - blueSyrup
+  - redSyrup
   layers:
   - Default
   - TransparentFX
