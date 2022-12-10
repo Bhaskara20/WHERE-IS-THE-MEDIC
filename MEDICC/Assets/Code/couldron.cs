@@ -133,6 +133,13 @@ public class couldron : MonoBehaviour
 
     }
 
+    public void emptySyrup()
+    {
+        redSyrup.SetActive(false);
+        blueSyrup.SetActive(false);
+        yellowSyrup.SetActive(false);
+    }
+
     private IEnumerator combined()
     {
         Debug.Log("Mixing the syrup....");

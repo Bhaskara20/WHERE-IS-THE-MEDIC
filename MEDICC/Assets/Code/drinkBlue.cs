@@ -6,10 +6,14 @@ using UnityEngine;
 public class drinkBlue : MonoBehaviour
 {
     public bool isReady;
+    public GameObject blueBottle;
+    public GameObject bottle;
+    public Transform bottlePort;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //blueBottle = GameObject.FindWithTag("blueBottle");
     }
 
     // Update is called once per frame
@@ -19,6 +23,16 @@ public class drinkBlue : MonoBehaviour
         {
             //holdit();
             Debug.Log("PASIEN MINUM OBAT BIRU");
+            blueBottle.SetActive(false);
+            bottle.GetComponent<pickBottle>().dropIt();
+            //redIngridient.transform.position = redPort.position;
+            //redIngridient.transform.rotation = redPort.rotation;
+
+            bottle.transform.position = bottlePort.position;
+            bottle.transform.rotation = bottlePort.rotation;
+
+            Debug.Log("Pasien Sembuh");
+
 
         }
     }
@@ -28,6 +42,7 @@ public class drinkBlue : MonoBehaviour
         if (other.gameObject.tag == "blueBottle")
         {
             isReady = true;
+            
         }
     }
 

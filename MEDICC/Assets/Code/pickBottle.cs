@@ -37,6 +37,12 @@ public class pickBottle : MonoBehaviour
 
     }
 
+    public void dropIt()
+    {
+        //Debug.Log("Drop!");
+        this.transform.parent = null;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Reach")

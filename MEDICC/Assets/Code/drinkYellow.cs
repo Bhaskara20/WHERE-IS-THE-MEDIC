@@ -5,10 +5,13 @@ using UnityEngine;
 public class drinkYellow : MonoBehaviour
 {
     public bool isReady;
+    public GameObject yellowBottle;
+    public GameObject bottle;
+    public Transform bottlePort;
     // Start is called before the first frame update
     void Start()
     {
-
+        //yellowBottle = GameObject.FindWithTag("yellowBottle");
     }
 
     // Update is called once per frame
@@ -18,6 +21,14 @@ public class drinkYellow : MonoBehaviour
         {
             //holdit();
             Debug.Log("PASIEN MINUM OBAT KUNING");
+            yellowBottle.SetActive(false);
+            bottle.GetComponent<pickBottle>().dropIt();
+            //redIngridient.transform.position = redPort.position;
+            //redIngridient.transform.rotation = redPort.rotation;
+
+            bottle.transform.position = bottlePort.position;
+            bottle.transform.rotation = bottlePort.rotation;
+            Debug.Log("Pasien Sembuh");
 
         }
     }

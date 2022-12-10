@@ -7,6 +7,11 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float rotationSpeed;
 
+    public float dashSpeed;
+    public float dashTime;
+
+    public float isDashing;
+
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -22,5 +27,24 @@ public class PlayerMovement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            Debug.Log("Dashing..");
+            StartCoroutine(DASH());
+        }
     }
+
+    IEnumerator DASH()
+    {
+        speed = 15f;
+        yield return new WaitForSeconds(0.5f);
+        speed = 5f;
+    }
+
+ 
+
+ 
+
+
 }

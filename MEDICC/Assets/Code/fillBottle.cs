@@ -13,6 +13,8 @@ public class fillBottle : MonoBehaviour
     public GameObject yellowBottle;
     public GameObject emptyObject;
 
+    public GameObject couldron;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class fillBottle : MonoBehaviour
         {
             Debug.Log("The bottle filled with Blue Syrup");
             blueBottle.SetActive(true);
+            couldron.GetComponent<couldron>().emptySyrup();
 
         }
 
@@ -33,12 +36,14 @@ public class fillBottle : MonoBehaviour
         {
             Debug.Log("The bottle filled with Red Syrup");
             redBottle.SetActive(true);
+            couldron.GetComponent<couldron>().emptySyrup();
         }
 
         if (isYellowSyrup && Input.GetKeyUp("space"))
         {
             Debug.Log("The bottle filled with Yellow Syrup");
             yellowBottle.SetActive(true);
+            couldron.GetComponent<couldron>().emptySyrup();
         }
     }
 
