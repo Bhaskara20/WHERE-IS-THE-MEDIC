@@ -9,6 +9,7 @@ public class drinkBlue : MonoBehaviour
     public GameObject blueBottle;
     public GameObject bottle;
     public Transform bottlePort;
+    public GameObject patientSpawner;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,9 @@ public class drinkBlue : MonoBehaviour
             bottle.transform.rotation = bottlePort.rotation;
 
             Debug.Log("Pasien Sembuh");
+            gameObject.SetActive(false);
+
+            patientSpawner.GetComponent<patientSpawner>().spawnPatient();
 
 
         }
