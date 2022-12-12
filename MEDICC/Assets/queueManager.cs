@@ -33,7 +33,7 @@ public class queueManager : MonoBehaviour
              AI = GameObject.FindWithTag("onqueue");
              AI.GetComponent<PatientAI>().option1();
          }
-         else if (point1.GetComponent<point1>().isOccupied == true && point2.GetComponent<point2>().isReady == true)
+         else if (point1.GetComponent<point1>().isOccupied == true && point1.GetComponent<point1>().isReady == false && point2.GetComponent<point2>().isReady == true)
          {
              AI = GameObject.FindWithTag("onqueue");
              AI.GetComponent<PatientAI>().option2();

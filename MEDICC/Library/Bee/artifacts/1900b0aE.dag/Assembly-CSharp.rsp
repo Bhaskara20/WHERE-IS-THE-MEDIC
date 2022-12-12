@@ -420,6 +420,7 @@
 "Assets/patientSpawner.cs"
 "Assets/point1.cs"
 "Assets/point2.cs"
+"Assets/point3.cs"
 "Assets/queueManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
