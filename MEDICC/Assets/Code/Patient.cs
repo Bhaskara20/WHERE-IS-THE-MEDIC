@@ -35,7 +35,13 @@ public class Patient : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        tensi = GameObject.FindWithTag("tensimeter");
+        thermo = GameObject.FindWithTag("thermometer");
+        stetos = GameObject.FindWithTag("stetoscope");
+
+        tensiPort = GameObject.FindWithTag("tensiport").transform;
+        thermoPort = GameObject.FindWithTag("thermoport").transform;
+        stetoPort = GameObject.FindWithTag("stetoport").transform;
     }
 
     // Update is called once per frame

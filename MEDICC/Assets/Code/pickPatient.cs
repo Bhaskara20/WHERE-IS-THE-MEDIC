@@ -22,6 +22,9 @@ public class pickPatient : MonoBehaviour
     void Start()
     {
         patient = GetComponent<BoxCollider>();
+        //reach =
+        //text =
+        //bed = 
     }
 
     // Update is called once per frame

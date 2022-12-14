@@ -340,9 +340,10 @@ GameObject:
   - component: {fileID: 2613639277748053049}
   - component: {fileID: -5711939843029148190}
   - component: {fileID: 1912874622}
+  - component: {fileID: 1333496962}
   m_Layer: 0
   m_Name: Patient (1)
-  m_TagString: onqueue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -449,7 +450,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2613639277748053054}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcfaffabfa2068d4cb68be0a5bfe10bf, type: 3}
   m_Name: 
@@ -629,3 +630,18 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1333496962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2613639277748053054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fcb7b4e3bebad4abe77af8782bfba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepPos: {fileID: 0}
+  patient: {fileID: 0}
+  naik: 0

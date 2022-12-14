@@ -8,13 +8,13 @@ public class patientSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Instantiate(patient, gameObject.transform.position, Quaternion.identity);
+        Instantiate(patient, gameObject.transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Instantiate(patient, gameObject.transform.position, Quaternion.identity);
     }
 
     public void spawnPatient()

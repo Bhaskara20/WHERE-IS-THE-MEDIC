@@ -32,6 +32,10 @@ TagManager:
   - chair4
   - chair5
   - onqueue
+  - sleepPos
+  - tensiport
+  - thermoport
+  - stetoport
   layers:
   - Default
   - TransparentFX

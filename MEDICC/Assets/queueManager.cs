@@ -25,23 +25,7 @@ public class queueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        //AI = GameObject.FindWithTag("Patient");
-        
-        if (point1.GetComponent<point1>().isOccupied == false)
-         {
-             AI = GameObject.FindWithTag("onqueue");
-             AI.GetComponent<PatientAI>().option1();
-         }
-         else if (point1.GetComponent<point1>().isOccupied == true && point1.GetComponent<point1>().isReady == false && point2.GetComponent<point2>().isReady == true)
-         {
-             AI = GameObject.FindWithTag("onqueue");
-             AI.GetComponent<PatientAI>().option2();
-         }else if (point2.GetComponent<point2>().isOccupied == true && point2.GetComponent<point2>().isReady == false)
-         {
-             AI = GameObject.FindWithTag("onqueue");
-             AI.GetComponent<PatientAI>().option3();
-         }
+       
 
     }
 }
