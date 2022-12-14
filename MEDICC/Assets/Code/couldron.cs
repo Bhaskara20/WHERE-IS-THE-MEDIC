@@ -108,9 +108,9 @@ public class couldron : MonoBehaviour
         if (isRedBoiled == true && isBlueBoiled == true)
         {
             //Debug.Log("the yellow medicine has been concocted");
-            //redSyrup.SetActive(false);
-            //blueSyrup.SetActive(false);
-            //yellowSyrup.SetActive(true);
+            redSyrup.SetActive(false);
+            blueSyrup.SetActive(false);
+            yellowSyrup.SetActive(true);
             StartCoroutine(combined());
             //red = false;
             //blue = false;

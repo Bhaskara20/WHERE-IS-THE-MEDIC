@@ -14,10 +14,7 @@ public class patientSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp("space"))
-        {
-            spawnPatient();
-        }
+        
     }
 
     public void spawnPatient()
