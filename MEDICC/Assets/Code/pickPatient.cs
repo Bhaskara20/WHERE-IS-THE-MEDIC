@@ -22,7 +22,8 @@ public class pickPatient : MonoBehaviour
     void Start()
     {
         patient = GetComponent<BoxCollider>();
-        //reach =
+        carry = GameObject.FindWithTag("carry").transform;
+        sleepPos = GameObject.FindWithTag("sleepPos").transform;
         //text =
         //bed = 
     }
@@ -64,7 +65,7 @@ public class pickPatient : MonoBehaviour
         this.transform.rotation = carry.rotation;
         this.transform.parent = GameObject.Find("patientCarry").transform;
         text.SetActive(false);
-
+        this.GetComponent<naikKasur>().juruSelamat();
         isCarried = true;
         //reach.SetActive(false);
 

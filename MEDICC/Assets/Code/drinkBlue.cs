@@ -14,7 +14,7 @@ public class drinkBlue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //blueBottle = GameObject.FindWithTag("blueBottle");
+        blueBottle = GameObject.FindWithTag("blueBottle");
     }
 
     // Update is called once per frame

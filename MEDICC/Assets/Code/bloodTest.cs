@@ -15,7 +15,9 @@ public class bloodTest : MonoBehaviour
 
     private void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
+        homePoint = GameObject.FindWithTag("bloodLabHomePoint").transform;
+        telePoint = GameObject.FindWithTag("telePoint").transform;
     }
 
 

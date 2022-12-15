@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 62268136}
   m_Layer: 0
   m_Name: patientCarry
-  m_TagString: Untagged
+  m_TagString: carry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 159208064}
   m_Layer: 0
   m_Name: homePoint
-  m_TagString: Untagged
+  m_TagString: pcrHomePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2260,7 +2260,7 @@ GameObject:
   - component: {fileID: 235876216}
   m_Layer: 0
   m_Name: teleportPoint
-  m_TagString: Untagged
+  m_TagString: telePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2536,7 +2536,7 @@ GameObject:
   - component: {fileID: 261837318}
   m_Layer: 0
   m_Name: holder
-  m_TagString: Untagged
+  m_TagString: holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2912,7 +2912,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25866
+  m_Name: pb_Mesh25876
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4460,7 +4460,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25208
+  m_Name: pb_Mesh25218
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10169,7 +10169,7 @@ GameObject:
   - component: {fileID: 840031517}
   m_Layer: 0
   m_Name: homePoint (2)
-  m_TagString: Untagged
+  m_TagString: xrayHomePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11993,7 +11993,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24862
+  m_Name: pb_Mesh24870
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14013,7 +14013,7 @@ GameObject:
   - component: {fileID: 1103486211}
   m_Layer: 0
   m_Name: homePoint (1)
-  m_TagString: Untagged
+  m_TagString: bloodLabHomePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

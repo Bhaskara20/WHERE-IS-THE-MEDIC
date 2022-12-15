@@ -15,7 +15,9 @@ public class XRAY : MonoBehaviour
 
     private void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
+        homePoint = GameObject.FindWithTag("xrayHomePoint").transform;
+        telePoint = GameObject.FindWithTag("telePoint").transform;
     }
 
     // Update is called once per frame

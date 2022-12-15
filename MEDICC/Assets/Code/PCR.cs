@@ -15,7 +15,9 @@ public class PCR : MonoBehaviour
 
     private void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
+        homePoint = GameObject.FindWithTag("pcrHomePoint").transform;
+        telePoint = GameObject.FindWithTag("telePoint").transform;
     }
 
     // Update is called once per frame

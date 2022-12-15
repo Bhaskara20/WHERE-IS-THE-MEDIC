@@ -36,6 +36,12 @@ TagManager:
   - tensiport
   - thermoport
   - stetoport
+  - holder
+  - carry
+  - xrayHomePoint
+  - bloodLabHomePoint
+  - pcrHomePoint
+  - telePoint
   layers:
   - Default
   - TransparentFX
