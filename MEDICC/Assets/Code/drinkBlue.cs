@@ -14,14 +14,19 @@ public class drinkBlue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        blueBottle = GameObject.FindWithTag("blueBottle");
+        //blueBottle = GameObject.FindWithTag("blueBottle");
     }
 
     // Update is called once per frame
     void Update()
     {
+        patientSpawner = GameObject.FindWithTag("patientSpawner");
+        bottlePort = GameObject.FindWithTag("bottlePort").transform;
+        bottle = GameObject.FindWithTag("bottle");
+        blueBottle = GameObject.FindWithTag("blueBottle");
         if (isReady && Input.GetKeyUp("space"))
         {
+            
             //holdit();
             Debug.Log("PASIEN MINUM OBAT BIRU");
             blueBottle.SetActive(false);

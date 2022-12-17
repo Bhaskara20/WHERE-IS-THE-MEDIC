@@ -13,12 +13,16 @@ public class drinkRed : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        redBottle = GameObject.FindWithTag("redBottle");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        patientSpawner = GameObject.FindWithTag("patientSpawner");
+        bottlePort = GameObject.FindWithTag("bottlePort").transform;
+        bottle = GameObject.FindWithTag("bottle");
+        redBottle = GameObject.FindWithTag("redBottle");
         if (isReady && Input.GetKeyUp("space"))
         {
             //holdit();

@@ -10,12 +10,22 @@ public class pickIngridient : MonoBehaviour
     public Transform redPort;
     public Transform bluePort;
 
+    public bool isHolding;
+    public GameObject player;
+
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
+
     void Update()
     {
-        if (inReach && Input.GetKeyUp("space"))
+        isHolding = player.GetComponent<holdingStatus>().isHolding;
+        if (isHolding == false && inReach && Input.GetKeyUp("space"))
         {
             holdit();
-            
+            player.GetComponent<holdingStatus>().isHolding = true;
+
         }
 
     }
@@ -35,6 +45,7 @@ public class pickIngridient : MonoBehaviour
     {
         Debug.Log("Drop!");
         this.transform.parent = null;
+        player.GetComponent<holdingStatus>().isHolding = false;
         //this.transform.position = redPort.position;
         //this.transform.rotation = redPort.rotation;
         //GetComponent<Rigidbody>().useGravity = true;

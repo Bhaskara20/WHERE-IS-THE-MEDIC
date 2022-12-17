@@ -9,18 +9,23 @@ public class pickBottle : MonoBehaviour
     public bool inReach;
 
     public GameObject reach;
+
+    public bool isHolding;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (inReach && Input.GetKeyUp("space"))
+        isHolding = player.GetComponent<holdingStatus>().isHolding;
+        if (isHolding == false && inReach && Input.GetKeyUp("space"))
         {
             holdit();
+            player.GetComponent<holdingStatus>().isHolding = true;
 
         }
     }
@@ -41,6 +46,7 @@ public class pickBottle : MonoBehaviour
     {
         //Debug.Log("Drop!");
         this.transform.parent = null;
+        player.GetComponent<holdingStatus>().isHolding = false;
     }
 
     void OnTriggerEnter(Collider other)

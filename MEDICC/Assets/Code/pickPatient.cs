@@ -18,12 +18,16 @@ public class pickPatient : MonoBehaviour
 
     public bool isCarried;
     public Transform sleepPos;
+
+    public GameObject player;
+    public bool isHolding;
     // Start is called before the first frame update
     void Start()
     {
         patient = GetComponent<BoxCollider>();
         carry = GameObject.FindWithTag("carry").transform;
         sleepPos = GameObject.FindWithTag("sleepPos").transform;
+        player = GameObject.FindWithTag("Player");
         //text =
         //bed = 
     }
@@ -31,10 +35,12 @@ public class pickPatient : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inReach && Input.GetKeyUp("space"))
+        isHolding = player.GetComponent<holdingStatus>().isHolding;
+        if (isHolding == false && inReach && Input.GetKeyUp("space"))
         {
             thinmode();
             carryit();
+            player.GetComponent<holdingStatus>().isHolding = true;
 
         }
 
@@ -78,7 +84,8 @@ public class pickPatient : MonoBehaviour
         this.transform.position = sleepPos.position;
         this.transform.rotation = sleepPos.rotation;
         isCarried = false;
-        
+        player.GetComponent<holdingStatus>().isHolding = false;
+
     }
 
     void OnTriggerEnter(Collider other)

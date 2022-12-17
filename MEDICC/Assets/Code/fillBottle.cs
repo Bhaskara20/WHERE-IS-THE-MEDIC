@@ -29,6 +29,11 @@ public class fillBottle : MonoBehaviour
             Debug.Log("The bottle filled with Blue Syrup");
             blueBottle.SetActive(true);
             couldron.GetComponent<couldron>().emptySyrup();
+            couldron.GetComponent<couldron>().isBlueBoiled = false;
+            couldron.GetComponent<couldron>().isRedBoiled = false;
+            couldron.GetComponent<couldron>().red = false;
+            couldron.GetComponent<couldron>().blue = false;
+            isBlueSyrup = false;
 
         }
 
@@ -37,6 +42,11 @@ public class fillBottle : MonoBehaviour
             Debug.Log("The bottle filled with Red Syrup");
             redBottle.SetActive(true);
             couldron.GetComponent<couldron>().emptySyrup();
+            couldron.GetComponent<couldron>().isBlueBoiled = false;
+            couldron.GetComponent<couldron>().isRedBoiled = false;
+            couldron.GetComponent<couldron>().red = false;
+            couldron.GetComponent<couldron>().blue = false;
+            isRedSyrup = false;
         }
 
         if (isYellowSyrup && Input.GetKeyUp("space"))
@@ -44,6 +54,11 @@ public class fillBottle : MonoBehaviour
             Debug.Log("The bottle filled with Yellow Syrup");
             yellowBottle.SetActive(true);
             couldron.GetComponent<couldron>().emptySyrup();
+            couldron.GetComponent<couldron>().isBlueBoiled = false;
+            couldron.GetComponent<couldron>().isRedBoiled = false;
+            couldron.GetComponent<couldron>().red = false;
+            couldron.GetComponent<couldron>().blue = false;
+            isYellowSyrup = false;
         }
     }
 

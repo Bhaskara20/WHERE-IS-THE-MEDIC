@@ -13,12 +13,16 @@ public class drinkYellow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        yellowBottle = GameObject.FindWithTag("yellowBottle");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        patientSpawner = GameObject.FindWithTag("patientSpawner");
+        bottlePort = GameObject.FindWithTag("bottlePort").transform;
+        bottle = GameObject.FindWithTag("bottle");
+        yellowBottle = GameObject.FindWithTag("yellowBottle");
         if (isReady && Input.GetKeyUp("space"))
         {
             //holdit();

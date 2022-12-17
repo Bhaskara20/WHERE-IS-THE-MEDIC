@@ -7,12 +7,20 @@ public class pickTool : MonoBehaviour
     public Transform holder;
     public bool inReach;
     public GameObject reach;
+    public bool isHolding;
+    public GameObject player;
 
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
     void Update()
     {
-        if (inReach && Input.GetKeyUp("space"))
+        isHolding = player.GetComponent<holdingStatus>().isHolding;
+        if (isHolding == false && inReach && Input.GetKeyUp("space"))
         {
             holdit();
+            player.GetComponent<holdingStatus>().isHolding = true;
 
         }
         
@@ -31,6 +39,7 @@ public class pickTool : MonoBehaviour
     public void dropIt()
     {
         this.transform.parent = null;
+        player.GetComponent<holdingStatus>().isHolding = false;
         //GetComponent<Rigidbody>().useGravity = true;
         //GetComponent<Rigidbody>().drag = 0;
         //GetComponent<Rigidbody>().isKinematic = false;

@@ -42,6 +42,9 @@ TagManager:
   - bloodLabHomePoint
   - pcrHomePoint
   - telePoint
+  - bottle
+  - bottlePort
+  - patientSpawner
   layers:
   - Default
   - TransparentFX
