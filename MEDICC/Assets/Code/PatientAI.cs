@@ -20,12 +20,35 @@ public class PatientAI : MonoBehaviour
         agent.destination = target.position;
     }
 
-   
+    public void option2()
+    {
+        target = GameObject.FindWithTag("bed2").transform;
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        agent.destination = target.position;
+    }
+    public void option3()
+    {
+        target = GameObject.FindWithTag("bed3").transform;
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        agent.destination = target.position;
+    }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        option1();
+        if (gameObject.tag.Equals("Patient"))
+        {
+            option1();
+        }else if (gameObject.tag.Equals("patient2"))
+        {
+            option2();
+        }else if (gameObject.tag.Equals("patient3"))
+        {
+            option3();
+        }
+        
         //NavMeshAgent agent = GetComponent<NavMeshAgent>();
         //agent.destination = target.position;
     }

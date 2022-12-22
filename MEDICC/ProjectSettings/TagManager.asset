@@ -45,6 +45,15 @@ TagManager:
   - bottle
   - bottlePort
   - patientSpawner
+  - patient1
+  - patient2
+  - patient3
+  - bed2
+  - bed3
+  - sleepPos2
+  - sleepPos3
+  - patientSpawner2
+  - patientSpawner3
   layers:
   - Default
   - TransparentFX

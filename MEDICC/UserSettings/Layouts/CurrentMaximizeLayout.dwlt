@@ -226,23 +226,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 28610000
-      m_LastClickedID: 24872
-      m_ExpandedIDs: 18fbffff28610000886200002a650000de650000
+      m_SelectedIDs: 70710000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 18fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: bloodLab
-        m_OriginalName: bloodLab
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 24872
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 1008
     height: 457.6
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -505,9 +505,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 17.673306, y: 2.4390206, z: -2.9238968}
+    m_Target: {x: 8.36871, y: 7.5806146, z: -7.706576}
     speed: 2
-    m_Value: {x: 17.673306, y: 2.4390206, z: -2.9238968}
+    m_Value: {x: 8.36871, y: 7.5806146, z: -7.706576}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -554,13 +554,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.395263, y: 0.16361336, z: -0.07185267, w: 0.9010632}
+    m_Target: {x: -0.31639007, y: 0.08112293, z: -0.026830157, w: -0.9448395}
     speed: 2
-    m_Value: {x: 0.3952472, y: 0.16360684, z: -0.0718498, w: 0.9010272}
+    m_Value: {x: -0.31637028, y: 0.08111785, z: -0.026828479, w: -0.94478035}
   m_Size:
-    m_Target: 10.410078
+    m_Target: 1.7155106
     speed: 2
-    m_Value: 10.410078
+    m_Value: 1.7155106
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -730,9 +730,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 4.6000366}
-    m_SelectedIDs: 84680000
-    m_LastClickedID: 26756
-    m_ExpandedIDs: 000000003a6700003c6700003e670000406700004267000000ca9a3bffffff7f
+    m_SelectedIDs: 866f0000
+    m_LastClickedID: 28550
+    m_ExpandedIDs: 000000008a6700008c6700008e670000906700009267000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -760,7 +760,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a6700003c6700003e6700004067000042670000
+    m_ExpandedIDs: 000000008a6700008c6700008e670000906700009267000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -785,8 +785,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 28610000
-    m_LastClickedInstanceID: 24872
+    m_SelectedInstanceIDs: 70710000
+    m_LastClickedInstanceID: 29040
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:

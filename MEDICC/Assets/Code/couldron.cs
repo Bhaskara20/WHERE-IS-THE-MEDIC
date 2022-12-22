@@ -110,10 +110,10 @@ public class couldron : MonoBehaviour
             //Debug.Log("the yellow medicine has been concocted");
             redSyrup.SetActive(false);
             blueSyrup.SetActive(false);
-            yellowSyrup.SetActive(true);
+            //yellowSyrup.SetActive(true);
             StartCoroutine(combined());
-            //red = false;
-            //blue = false;
+            red = false;
+            blue = false;
         }
         
         

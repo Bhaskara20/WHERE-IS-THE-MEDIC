@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 1333496962}
   m_Layer: 0
   m_Name: Patient (1)
-  m_TagString: Untagged
+  m_TagString: Patient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -492,6 +492,8 @@ MonoBehaviour:
   mustDrop: 0
   isCarried: 0
   sleepPos: {fileID: 0}
+  player: {fileID: 0}
+  isHolding: 0
 --- !u!114 &2613639277748053028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,3 +647,5 @@ MonoBehaviour:
   sleepPos: {fileID: 0}
   patient: {fileID: 0}
   naik: 0
+  harusNempel: 0
+  scriptAgent: {fileID: 0}
