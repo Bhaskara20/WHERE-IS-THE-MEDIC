@@ -11,6 +11,7 @@ public class pickBottle : MonoBehaviour
     public GameObject reach;
 
     public bool isHolding;
+    public bool isHoldingAlter;
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class pickBottle : MonoBehaviour
         {
             holdit();
             player.GetComponent<holdingStatus>().isHolding = true;
+            isHoldingAlter = true;
 
         }
     }
@@ -47,6 +49,7 @@ public class pickBottle : MonoBehaviour
         //Debug.Log("Drop!");
         this.transform.parent = null;
         player.GetComponent<holdingStatus>().isHolding = false;
+        isHoldingAlter = false;
     }
 
     void OnTriggerEnter(Collider other)

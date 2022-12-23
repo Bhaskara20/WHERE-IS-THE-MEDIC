@@ -112,8 +112,8 @@ public class couldron : MonoBehaviour
             blueSyrup.SetActive(false);
             //yellowSyrup.SetActive(true);
             StartCoroutine(combined());
-            red = false;
-            blue = false;
+            //red = false;
+            //blue = false;
         }
         
         
@@ -142,6 +142,8 @@ public class couldron : MonoBehaviour
 
     private IEnumerator combined()
     {
+        red = false;
+        blue = false;
         Debug.Log("Mixing the syrup....");
         yield return new WaitForSeconds(3);
         Debug.Log("the yellow medicine has been concocted");

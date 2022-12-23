@@ -11,9 +11,18 @@ public class PlayerMovement : MonoBehaviour
     public float dashTime;
 
     public float isDashing;
+   
 
     void Update()
     {
+        GameObject bottle = GameObject.FindWithTag("bottle");
+        Transform bottlePort = GameObject.FindWithTag("bottlePort").transform;
+        GameObject blueBottle = GameObject.FindWithTag("blueBottle");
+        GameObject redBottle = GameObject.FindWithTag("redBottle");
+        GameObject yellowBottle = GameObject.FindWithTag("yellowBottle");
+
+
+        //GameObject
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -30,10 +39,41 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            Debug.Log("Dashing..");
+            //Debug.Log("Dashing..");
             StartCoroutine(DASH());
         }
+
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            //drop bottle
+            if (bottle.GetComponent<pickBottle>().isHoldingAlter == true)
+            {
+                Debug.Log("Drop");
+                bottle.GetComponent<pickBottle>().dropIt();
+                bottle.transform.position = bottlePort.position;
+                bottle.transform.rotation = bottlePort.rotation;
+                blueBottle.SetActive(false);
+                redBottle.SetActive(false);
+                yellowBottle.SetActive(false);
+            }
+
+            //drop tool
+            if ()
+            {
+
+            }
+
+
+            //drop ingridient
+
+
+
+            //drop crushed ingridient
+            
+        }
     }
+
+    
 
     IEnumerator DASH()
     {
