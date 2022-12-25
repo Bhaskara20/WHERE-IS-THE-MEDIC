@@ -43,7 +43,7 @@ public class pickIngridient : MonoBehaviour
     }
     public void dropIt()
     {
-        Debug.Log("Drop!");
+        //Debug.Log("Drop!");
         this.transform.parent = null;
         player.GetComponent<holdingStatus>().isHolding = false;
         //this.transform.position = redPort.position;

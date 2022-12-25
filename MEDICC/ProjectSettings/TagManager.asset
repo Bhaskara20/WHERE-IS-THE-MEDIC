@@ -54,6 +54,8 @@ TagManager:
   - sleepPos3
   - patientSpawner2
   - patientSpawner3
+  - bluePort
+  - redPort
   layers:
   - Default
   - TransparentFX

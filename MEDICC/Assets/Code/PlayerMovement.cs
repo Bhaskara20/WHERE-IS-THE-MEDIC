@@ -21,6 +21,20 @@ public class PlayerMovement : MonoBehaviour
         GameObject redBottle = GameObject.FindWithTag("redBottle");
         GameObject yellowBottle = GameObject.FindWithTag("yellowBottle");
 
+        GameObject stetoskop = GameObject.FindWithTag("stetoscope");
+        GameObject tensimeter = GameObject.FindWithTag("tensimeter");
+        GameObject thermometer = GameObject.FindWithTag("thermometer");
+
+        Transform tensiPort = GameObject.FindWithTag("tensiport").transform;
+        Transform thermoPort = GameObject.FindWithTag("thermoport").transform;
+        Transform stetoPort = GameObject.FindWithTag("stetoport").transform;
+
+        GameObject red = GameObject.FindWithTag("red");
+        GameObject blue = GameObject.FindWithTag("blue");
+
+        Transform redPort = GameObject.FindWithTag("redPort").transform;
+        Transform bluePort = GameObject.FindWithTag("bluePort").transform;
+
 
         //GameObject
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -48,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             //drop bottle
             if (bottle.GetComponent<pickBottle>().isHoldingAlter == true)
             {
-                Debug.Log("Drop");
+                //Debug.Log("Drop");
                 bottle.GetComponent<pickBottle>().dropIt();
                 bottle.transform.position = bottlePort.position;
                 bottle.transform.rotation = bottlePort.rotation;
@@ -57,15 +71,47 @@ public class PlayerMovement : MonoBehaviour
                 yellowBottle.SetActive(false);
             }
 
-            //drop tool
-            if ()
-            {
 
+            //drop tool
+
+            if (stetoskop.GetComponent<pickTool>().isHolding == true)
+            {
+                //Debug.Log("Drop");
+                stetoskop.GetComponent<pickTool>().dropIt();
+                stetoskop.transform.position = stetoPort.position;
+                stetoskop.transform.rotation = stetoPort.rotation;
+            }
+
+            if (tensimeter.GetComponent<pickTool>().isHolding == true)
+            {
+                tensimeter.GetComponent<pickTool>().dropIt();
+                tensimeter.transform.position = tensiPort.position;
+                tensimeter.transform.rotation = tensiPort.rotation;
+            }
+
+            if (thermometer.GetComponent<pickTool>().isHolding == true)
+            {
+                thermometer.GetComponent<pickTool>().dropIt();
+                thermometer.transform.position = thermoPort.position;
+                thermometer.transform.rotation = thermoPort.rotation;
             }
 
 
-            //drop ingridient
 
+            //drop ingridient
+            if (red.GetComponent<pickIngridient>().isHolding == true)
+            {
+                red.GetComponent<pickIngridient>().dropIt();
+                red.transform.position = redPort.position;
+                red.transform.rotation = redPort.rotation;
+            }
+
+            if (blue.GetComponent<pickIngridient>().isHolding == true)
+            {
+                blue.GetComponent<pickIngridient>().dropIt();
+                blue.transform.position = bluePort.position;
+                blue.transform.rotation = bluePort.rotation;
+            }
 
 
             //drop crushed ingridient

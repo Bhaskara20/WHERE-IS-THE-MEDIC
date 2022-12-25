@@ -2166,6 +2166,7 @@ MonoBehaviour:
   inReach: 0
   reach: {fileID: 1845734628}
   isHolding: 0
+  isHoldingAlter: 0
   player: {fileID: 0}
 --- !u!54 &215047281
 Rigidbody:
@@ -6753,6 +6754,7 @@ MonoBehaviour:
   inReach: 0
   reach: {fileID: 1845734628}
   isHolding: 0
+  isHoldingAlter: 0
   player: {fileID: 0}
 --- !u!54 &584747983
 Rigidbody:
@@ -9484,7 +9486,7 @@ GameObject:
   - component: {fileID: 833066874}
   m_Layer: 0
   m_Name: bluePort
-  m_TagString: Untagged
+  m_TagString: bluePort
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10238,6 +10240,7 @@ MonoBehaviour:
   inReach: 0
   reach: {fileID: 1845734628}
   isHolding: 0
+  isHoldingAlter: 0
   player: {fileID: 0}
 --- !u!54 &839508105
 Rigidbody:
@@ -20037,6 +20040,7 @@ MonoBehaviour:
   inReach: 0
   reach: {fileID: 1845734628}
   isHolding: 0
+  isHoldingAlter: 0
   player: {fileID: 0}
 --- !u!54 &1443218467
 Rigidbody:
@@ -20463,7 +20467,7 @@ GameObject:
   - component: {fileID: 1473006329}
   m_Layer: 0
   m_Name: redPort
-  m_TagString: Untagged
+  m_TagString: redPort
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29169,6 +29173,7 @@ MonoBehaviour:
   inReach: 0
   reach: {fileID: 1845734628}
   isHolding: 0
+  isHoldingAlter: 0
   player: {fileID: 0}
 --- !u!114 &1917142649
 MonoBehaviour:
