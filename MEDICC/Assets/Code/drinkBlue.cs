@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class drinkBlue : MonoBehaviour
 {
@@ -11,9 +12,13 @@ public class drinkBlue : MonoBehaviour
     public Transform bottlePort;
     public GameObject patientSpawner;
 
+    //public TextMeshProUGUI patientCount;
+    public GameObject counter;
+
     // Start is called before the first frame update
     void Start()
     {
+       
         //blueBottle = GameObject.FindWithTag("blueBottle");
     }
 
@@ -44,6 +49,7 @@ public class drinkBlue : MonoBehaviour
         bottlePort = GameObject.FindWithTag("bottlePort").transform;
         bottle = GameObject.FindWithTag("bottle");
         blueBottle = GameObject.FindWithTag("blueBottle");
+        counter = GameObject.FindWithTag("counter");
         if (isReady && Input.GetKeyUp("space"))
         {
             
@@ -57,8 +63,10 @@ public class drinkBlue : MonoBehaviour
             bottle.transform.position = bottlePort.position;
             bottle.transform.rotation = bottlePort.rotation;
 
+            counter.GetComponent<counter>().addCount();
             Debug.Log("Pasien Sembuh");
             gameObject.SetActive(false);
+
 
             patientSpawner.GetComponent<patientSpawner>().spawnPatient();
 

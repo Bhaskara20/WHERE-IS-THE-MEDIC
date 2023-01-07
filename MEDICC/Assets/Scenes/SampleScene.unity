@@ -1548,6 +1548,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3912589349499233883, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -69.48136
+      objectReference: {fileID: 0}
     - target: {fileID: 3912589350169584240, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -1643,6 +1647,42 @@ PrefabInstance:
     - target: {fileID: 3912589350169584243, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350213711509, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350213711509, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350462589034, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8.699505
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350462589034, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -108.31252
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350688672830, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -97.47407
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350763266588, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -55.479153
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350763266588, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -81.989586
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589350994114542, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912589351157827813, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -97
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
@@ -8914,6 +8954,17 @@ Transform:
   m_Father: {fileID: 1393200541}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781255520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3912589350462589033, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+  m_PrefabInstance: {fileID: 153227835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &792991237
 Mesh:
   m_ObjectHideFlags: 0
@@ -16637,6 +16688,52 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1217190134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217190136}
+  - component: {fileID: 1217190135}
+  m_Layer: 0
+  m_Name: patientCounter
+  m_TagString: counter
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1217190135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217190134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60273415adc6db340a6919ebb6c4f028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counts: {fileID: 781255520}
+  nums: 0
+--- !u!4 &1217190136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217190134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 57
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220922759
 GameObject:
   m_ObjectHideFlags: 0
@@ -17285,6 +17382,25 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1253390449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5441494332871032520, guid: 366d5079b1b247e459e88b7e114a94f5, type: 3}
+  m_PrefabInstance: {fileID: 1657149383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1253390452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253390449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442b36fa03281ae4b91b2ada00241b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 1322985830}
+  timerFix: 910
 --- !u!1 &1258973672
 GameObject:
   m_ObjectHideFlags: 0
@@ -18271,6 +18387,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1322985830 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3912589350688672829, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+  m_PrefabInstance: {fileID: 153227835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326821505
 GameObject:
   m_ObjectHideFlags: 0
@@ -28335,6 +28462,7 @@ MonoBehaviour:
   bottle: {fileID: 1917142641}
   bottlePort: {fileID: 584747988}
   patientSpawner: {fileID: 852788119}
+  counter: {fileID: 0}
 --- !u!114 &1803682727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28352,6 +28480,7 @@ MonoBehaviour:
   bottle: {fileID: 1917142641}
   bottlePort: {fileID: 584747988}
   patientSpawner: {fileID: 852788119}
+  counter: {fileID: 0}
 --- !u!114 &1803682728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28369,6 +28498,7 @@ MonoBehaviour:
   bottle: {fileID: 1917142641}
   bottlePort: {fileID: 584747988}
   patientSpawner: {fileID: 852788119}
+  counter: {fileID: 0}
 --- !u!43 &1805835289
 Mesh:
   m_ObjectHideFlags: 0
