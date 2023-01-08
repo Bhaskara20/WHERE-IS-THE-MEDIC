@@ -358,12 +358,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/canvasController.cs"
 "Assets/Code/backToMain.cs"
 "Assets/Code/bed.cs"
 "Assets/Code/bloodTest.cs"
 "Assets/Code/BloodTimer.cs"
 "Assets/Code/CameraController.cs"
 "Assets/Code/couldron.cs"
+"Assets/Code/dataRemover.cs"
 "Assets/Code/drinkBlue.cs"
 "Assets/Code/drinkRed.cs"
 "Assets/Code/drinkYellow.cs"
@@ -426,6 +428,9 @@
 "Assets/LeanTween/Framework/LTDescr.cs"
 "Assets/LeanTween/Framework/LTDescrOptional.cs"
 "Assets/LeanTween/Framework/LTSeq.cs"
+"Assets/mainMenuButton.cs"
+"Assets/mainMenus.cs"
+"Assets/pauseMenu.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
@@ -461,6 +466,7 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
 "Assets/UIprefab/Timer.cs"
+"Assets/upgrade.cs"
 -langversion:9.0
 
 /deterministic

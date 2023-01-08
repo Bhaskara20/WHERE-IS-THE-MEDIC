@@ -130,6 +130,7 @@
     <Compile Include="Assets\Code\BloodTimer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
+    <Compile Include="Assets\counter.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2d.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Code\occupy.cs" />
@@ -158,7 +159,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
-    <Compile Include="Assets\counter.cs" />
+    <Compile Include="Assets\mainMenuButton.cs" />
+    <Compile Include="Assets\mainMenus.cs" />
+    <Compile Include="Assets\upgrade.cs" />
+    <Compile Include="Assets\Code\dataRemover.cs" />
+    <Compile Include="Assets\pauseMenu.cs" />
+    <Compile Include="Assets\canvasController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

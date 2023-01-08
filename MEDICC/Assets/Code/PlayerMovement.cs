@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        speed = PlayerPrefs.GetFloat("PlayerSpeeds");
         GameObject bottle = GameObject.FindWithTag("bottle");
         Transform bottlePort = GameObject.FindWithTag("bottlePort").transform;
         GameObject blueBottle = GameObject.FindWithTag("blueBottle");
@@ -50,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
+
+        //PlayerPrefs.SetFloat("PlayerSpeeds", speed);
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
