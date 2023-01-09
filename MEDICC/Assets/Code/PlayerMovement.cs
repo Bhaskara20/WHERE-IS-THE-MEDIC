@@ -11,7 +11,13 @@ public class PlayerMovement : MonoBehaviour
     public float dashTime;
 
     public float isDashing;
-   
+
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -45,6 +51,9 @@ public class PlayerMovement : MonoBehaviour
         movementDirection.Normalize();
 
         transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
+
+
+        //animator.SetFloat("Speed", movementDirection.magnitude);
 
         if (movementDirection != Vector3.zero)
         {
