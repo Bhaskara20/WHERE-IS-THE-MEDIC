@@ -28729,6 +28729,7 @@ MonoBehaviour:
   thermobar: {fileID: 0}
   stetosbar: {fileID: 0}
   result: {fileID: 148778725}
+  checkingTime: 0
 --- !u!114 &1803682722
 MonoBehaviour:
   m_ObjectHideFlags: 0

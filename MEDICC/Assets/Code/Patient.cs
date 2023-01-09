@@ -29,12 +29,15 @@ public class Patient : MonoBehaviour
     public GameObject stetosbar;
 
     public TextMeshProUGUI result;
+
+    public float checkingTime;
     //public GameObject text;
 
     //public GameObject holder;
     // Start is called before the first frame update
     void Start()
     {
+        checkingTime = PlayerPrefs.GetFloat("PlayerEfficiencys"); ;
         tensi = GameObject.FindWithTag("tensimeter");
         thermo = GameObject.FindWithTag("thermometer");
         stetos = GameObject.FindWithTag("stetoscope");
@@ -52,23 +55,24 @@ public class Patient : MonoBehaviour
             tensi.GetComponent<pickTool>().dropIt();
             tensi.transform.position = tensiPort.position;
             tensi.transform.rotation = tensiPort.rotation;
-            //tensibar.SetActive(true);
-            tensiChecked = true;
-            Debug.Log("Ukur Tensi");
-        }else if (readyThermo && Input.GetKeyUp("space"))
+            StartCoroutine(delayTensi());
+        }
+        else if (readyThermo && Input.GetKeyUp("space"))
         {
+            //StartCoroutine(delay());
             thermo.GetComponent<pickTool>().dropIt();
             thermo.transform.position = thermoPort.position;
             thermo.transform.rotation = thermoPort.rotation;
-            thermoChecked = true;
-            Debug.Log("Ukur Suhu");
+            StartCoroutine(delayThermo());
+           
         }else if (readySteto && Input.GetKeyUp("space"))
         {
+           // StartCoroutine(delay());
             stetos.GetComponent<pickTool>().dropIt();
             stetos.transform.position = stetoPort.position;
             stetos.transform.rotation = stetoPort.rotation;
-            stetosChecked = true;
-            Debug.Log("Periksa Fisik");
+            StartCoroutine(delayStetos());
+           
         }
 
 
@@ -81,7 +85,27 @@ public class Patient : MonoBehaviour
         }
     }
 
+    private IEnumerator delayTensi()
+    {
+        yield return new WaitForSeconds(checkingTime);
+        //tensibar.SetActive(true);
+        tensiChecked = true;
+        Debug.Log("Ukur Tensi");
+    }
 
+    private IEnumerator delayThermo()
+    {
+        yield return new WaitForSeconds(checkingTime);
+        thermoChecked = true;
+        Debug.Log("Ukur Suhu");
+    }
+
+    private IEnumerator delayStetos()
+    {
+        yield return new WaitForSeconds(checkingTime);
+        stetosChecked = true;
+        Debug.Log("Periksa Fisik");
+    }
 
     private void OnTriggerEnter(Collider other)
     {

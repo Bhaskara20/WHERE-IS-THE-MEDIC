@@ -19,6 +19,10 @@ public class upgrade : MonoBehaviour
     public TextMeshProUGUI chemistt;
 
     public float playerSpeed;
+    public float playerEfficiency;
+    public float playerMedical;
+    public float playerPharmacy;
+    public float playerChemistry;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,13 +38,37 @@ public class upgrade : MonoBehaviour
             playerSpeed = 5;
             PlayerPrefs.SetFloat("PlayerSpeeds", playerSpeed);
         }*/
+
+        //Store speed data
         speedLevel = PlayerPrefs.GetFloat("speedLevel");
         playerSpeed = PlayerPrefs.GetFloat("PlayerSpeeds");
+
+        //Store efficiency data
+        efficiencyLevel = PlayerPrefs.GetFloat("efficiencyLevel");
+        playerEfficiency = PlayerPrefs.GetFloat("PlayerEfficiencys");
+
+        //Store medical knowledge data
+        medicalLevel = PlayerPrefs.GetFloat("medicalLevel");
+        playerMedical = PlayerPrefs.GetFloat("PlayerMedicals");
+
+        //Store Pharmacy knowledge data
+        pharmacyLevel = PlayerPrefs.GetFloat("pharmacyLevel");
+        playerPharmacy = PlayerPrefs.GetFloat("PlayerPharmacys");
+
+        //Store chemistry knowledge data
+        chemistryLevel = PlayerPrefs.GetFloat("chemistryLevel");
+        playerChemistry = PlayerPrefs.GetFloat("PlayerChemistrys");
 
         if (speedLevel == 0)
         {
             playerSpeed = 5;
             PlayerPrefs.SetFloat("PlayerSpeeds", playerSpeed);
+        }
+
+        if (efficiencyLevel == 0)
+        {
+            playerEfficiency = 5;
+            PlayerPrefs.SetFloat("PlayerEfficiencys", playerEfficiency);
         }
         speeds.text = "Lvl " + speedLevel.ToString();
         efficiens.text = "Lvl " + efficiencyLevel.ToString();
@@ -52,7 +80,7 @@ public class upgrade : MonoBehaviour
     public void speedUpgrade()
     {
         speedLevel += 1;
-        playerSpeed += 1;
+        playerSpeed += 0.2f;
         PlayerPrefs.SetFloat("PlayerSpeeds", playerSpeed);
         PlayerPrefs.SetFloat("speedLevel", speedLevel);
 
@@ -61,21 +89,33 @@ public class upgrade : MonoBehaviour
     public void efficiencyUpgrade()
     {
         efficiencyLevel += 1;
+        playerEfficiency -= 0.2f;
+        PlayerPrefs.SetFloat("PlayerEfficiencys", playerEfficiency);
+        PlayerPrefs.SetFloat("efficiencyLevel", efficiencyLevel);
     }
 
     public void medical()
     {
         medicalLevel += 1;
+        playerMedical -= 0.2f;
+        PlayerPrefs.SetFloat("PlayerMedicals", playerMedical);
+        PlayerPrefs.SetFloat("medicalLevel", medicalLevel);
     }
 
     public void pharmacy()
     {
         pharmacyLevel += 1;
+        playerPharmacy -= 0.2f;
+        PlayerPrefs.SetFloat("PlayerPharmacys", playerPharmacy);
+        PlayerPrefs.SetFloat("pharmacyLevel", pharmacyLevel);
     }
 
     public void chemistry()
     {
         chemistryLevel += 1;
+        playerChemistry -= 0.2f;
+        PlayerPrefs.SetFloat("PlayerChemistrys", playerChemistry);
+        PlayerPrefs.SetFloat("chemistryLevel", chemistryLevel);
     }
 
     public void backk()
