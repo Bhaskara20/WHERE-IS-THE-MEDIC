@@ -13,8 +13,11 @@ public class XRAY : MonoBehaviour
     public GameObject BED;
     public GameObject timeManagement;
 
+    public float checkingTime;
+
     private void Start()
     {
+        checkingTime = PlayerPrefs.GetFloat("PlayerMedicals");
         player = GameObject.FindWithTag("Player");
         homePoint = GameObject.FindWithTag("xrayHomePoint").transform;
         telePoint = GameObject.FindWithTag("telePoint").transform;
@@ -48,7 +51,7 @@ public class XRAY : MonoBehaviour
     private IEnumerator showResult()
     {
         xrayTest();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(checkingTime);
         player.transform.position = homePoint.position;
         diagnozeResult(3);
 

@@ -24,11 +24,13 @@ public class mortar : MonoBehaviour
 
     public GameObject crushedSpawner;
 
+    public float crushingTime;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        crushingTime = PlayerPrefs.GetFloat("PlayerPharmacys"); ;
     }
 
     // Update is called once per frame
@@ -62,7 +64,7 @@ public class mortar : MonoBehaviour
     private IEnumerator crushing()
     {
         Debug.Log("Crushing the ingridient....");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(crushingTime);
         if (red == true)
         {
             Debug.Log("red ingridient was crushed!");

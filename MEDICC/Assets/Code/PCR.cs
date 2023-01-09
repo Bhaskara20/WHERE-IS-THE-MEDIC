@@ -13,8 +13,12 @@ public class PCR : MonoBehaviour
 
     public GameObject timeManagement;
 
+    public float checkingTime;
+
+
     private void Start()
     {
+        checkingTime = PlayerPrefs.GetFloat("PlayerMedicals");
         player = GameObject.FindWithTag("Player");
         homePoint = GameObject.FindWithTag("pcrHomePoint").transform;
         telePoint = GameObject.FindWithTag("telePoint").transform;
@@ -54,7 +58,7 @@ public class PCR : MonoBehaviour
     private IEnumerator showResult()
     {
         pcrTest();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(checkingTime);
         player.transform.position = homePoint.position;
         diagnozeResult(3);
     }

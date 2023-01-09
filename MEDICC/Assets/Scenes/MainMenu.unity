@@ -2792,6 +2792,9 @@ MonoBehaviour:
   chemistt: {fileID: 43466065}
   playerSpeed: 0
   playerEfficiency: 0
+  playerMedical: 0
+  playerPharmacy: 0
+  playerChemistry: 0
 --- !u!1 &1650424520
 GameObject:
   m_ObjectHideFlags: 0

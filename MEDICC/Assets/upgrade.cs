@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Xml.Serialization;
+using Unity.VisualScripting;
 
 public class upgrade : MonoBehaviour
 {
@@ -59,16 +60,40 @@ public class upgrade : MonoBehaviour
         chemistryLevel = PlayerPrefs.GetFloat("chemistryLevel");
         playerChemistry = PlayerPrefs.GetFloat("PlayerChemistrys");
 
+        //set speed default
         if (speedLevel == 0)
         {
             playerSpeed = 5;
             PlayerPrefs.SetFloat("PlayerSpeeds", playerSpeed);
         }
 
+        //set efficiency default
         if (efficiencyLevel == 0)
         {
             playerEfficiency = 5;
             PlayerPrefs.SetFloat("PlayerEfficiencys", playerEfficiency);
+        }
+
+        //set medical default
+        if (medicalLevel == 0)
+        {
+            playerMedical = 5;
+            PlayerPrefs.SetFloat("PlayerMedicals", playerMedical);
+
+        }
+
+        //set pharmacy default
+        if (pharmacyLevel == 0)
+        {
+            playerPharmacy = 5;
+            PlayerPrefs.SetFloat("PlayerPharmacys", playerPharmacy);
+        }
+
+        //set chemistry default
+        if (chemistryLevel == 0)
+        {
+            playerChemistry = 5;
+            PlayerPrefs.SetFloat("PlayerChemistrys", playerChemistry);
         }
         speeds.text = "Lvl " + speedLevel.ToString();
         efficiens.text = "Lvl " + efficiencyLevel.ToString();
