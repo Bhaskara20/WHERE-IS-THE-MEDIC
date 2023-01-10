@@ -15,10 +15,11 @@ public class canvasController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPause == false && Input.GetKeyUp("p"))
+        if(Input.GetKeyUp("p"))
         {
             pause.SetActive(true);
-            isPause = true;
+            PauseGame();
+            //isPause = true;
         }
 
         /*if (isPause == true && Input.GetKeyUp("p"))
@@ -26,5 +27,14 @@ public class canvasController : MonoBehaviour
             pause.SetActive(false);
             isPause=false;
         }*/
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
     }
 }

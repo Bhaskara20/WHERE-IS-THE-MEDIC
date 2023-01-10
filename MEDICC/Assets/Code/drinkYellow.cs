@@ -59,11 +59,19 @@ public class drinkYellow : MonoBehaviour
 
             counter.GetComponent<counter>().addCount();
             Debug.Log("Pasien Sembuh");
+            //StartCoroutine(delaySpawn());
             gameObject.SetActive(false);
 
             patientSpawner.GetComponent<patientSpawner>().spawnPatient();
+            
 
         }
+    }
+
+    private IEnumerator delaySpawn()
+    {
+        yield return new WaitForSeconds(5);
+        patientSpawner.GetComponent<patientSpawner>().spawnPatient();
     }
 
     private void OnTriggerEnter(Collider other)

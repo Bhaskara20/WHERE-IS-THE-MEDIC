@@ -62,9 +62,17 @@ public class drinkRed : MonoBehaviour
             Debug.Log("Pasien Sembuh");
             gameObject.SetActive(false);
 
-            patientSpawner.GetComponent<patientSpawner>().spawnPatient();
+
+            StartCoroutine(delaySpawn());
+            //patientSpawner.GetComponent<patientSpawner>().spawnPatient();
 
         }
+    }
+
+    private IEnumerator delaySpawn()
+    {
+        yield return new WaitForSeconds(5);
+        patientSpawner.GetComponent<patientSpawner>().spawnPatient();
     }
 
     private void OnTriggerEnter(Collider other)

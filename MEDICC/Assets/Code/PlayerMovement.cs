@@ -13,10 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public float isDashing;
 
     private Animator animator;
+    private Animation anim;
+    public GameObject model;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = model.GetComponent<Animator>();
+        //anim = model.GetComponent<Animation>();
     }
 
     void Update()
@@ -52,8 +55,8 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
 
-
         //animator.SetFloat("Speed", movementDirection.magnitude);
+        //anim.Play("Walking");
 
         if (movementDirection != Vector3.zero)
         {
