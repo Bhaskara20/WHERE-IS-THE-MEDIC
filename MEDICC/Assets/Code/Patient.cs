@@ -94,6 +94,18 @@ public class Patient : MonoBehaviour
             }
         }
 
+        //day 3
+        if (scene.name == "Day3")
+        {
+            if (tensiChecked && thermoChecked && stetosChecked)
+            {
+                diagnozeResult2(2);
+                tensiChecked = false;
+                thermoChecked = false;
+                stetosChecked = false;
+            }
+        }
+
         /*if (tensiChecked && thermoChecked && stetosChecked)
         {
             diagnozeResult(3);
@@ -204,6 +216,27 @@ public class Patient : MonoBehaviour
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<bloodTest>().enabled = true;
 
+        }
+    }
+
+    void diagnozeResult2(int Maxint)
+    {
+        int randomNum = Random.Range(1, Maxint + 1);
+        if (randomNum == 1)
+        {
+            Debug.Log("Butuh obat biru");
+            this.GetComponent<drinkBlue>().enabled = true;
+            //result.text = "Harus Cek Darah";
+            //this.GetComponent<pickPatient>().enabled = true;
+            //this.GetComponent<bloodTest>().enabled = true;
+
+        }else if (randomNum == 2)
+        {
+            Debug.Log("Butuh obat merah");
+            this.GetComponent<drinkRed>().enabled = true;
+            //result.text = "Harus Test PCR";
+            //this.GetComponent<pickPatient>().enabled = true;
+            //this.GetComponent<PCR>().enabled = true;
         }
     }
 }
