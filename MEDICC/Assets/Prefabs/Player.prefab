@@ -636,7 +636,7 @@ MonoBehaviour:
   dashSpeed: 0
   dashTime: 0
   isDashing: 0
-  model: {fileID: 0}
+  model: {fileID: 6994465281037716900}
 --- !u!54 &7912891395970315043
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -884,6 +884,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 1e6fe37756a19de42ac4ffa98cba4f5b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fd39becd7faf54a8caa782c8eb20e1, type: 3}
+--- !u!1 &6994465281037716900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e5fd39becd7faf54a8caa782c8eb20e1, type: 3}
+  m_PrefabInstance: {fileID: 7912891394342220021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7663584715420342046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e5fd39becd7faf54a8caa782c8eb20e1, type: 3}

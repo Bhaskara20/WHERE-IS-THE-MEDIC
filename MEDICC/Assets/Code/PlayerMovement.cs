@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        //animator = model.GetComponent<Animator>();
+        animator = model.GetComponent<Animator>();
         //anim = model.GetComponent<Animation>();
     }
 
@@ -60,8 +60,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (movementDirection != Vector3.zero)
         {
+            animator.SetBool("isWalking", true);
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
         }
 
         //PlayerPrefs.SetFloat("PlayerSpeeds", speed);
