@@ -94,6 +94,7 @@
     <Compile Include="Assets\Code\PCR.cs" />
     <Compile Include="Assets\Code\pickCrushed.cs" />
     <Compile Include="Assets\Code\couldron.cs" />
+    <Compile Include="Assets\stageSelect.cs" />
     <Compile Include="Assets\Code\XRAY.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
     <Compile Include="Assets\Code\naikKasur.cs" />

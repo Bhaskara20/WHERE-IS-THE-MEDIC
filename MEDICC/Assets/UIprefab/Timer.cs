@@ -15,6 +15,9 @@ public class Timer : MonoBehaviour
     public GameObject failed;
     public bool isFinished;
 
+    public bool isWin;
+    public bool isFailed;
+
     public GameObject patientCounter;
 
     public float goal;
