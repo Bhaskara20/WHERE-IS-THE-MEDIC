@@ -21,7 +21,7 @@ public class mainMenus : MonoBehaviour
     public void play()
     {
         //Debug.Log("Play");
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene("StageSelection");
     }
 
     public void shop()

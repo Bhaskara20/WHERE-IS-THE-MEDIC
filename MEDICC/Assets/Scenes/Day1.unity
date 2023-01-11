@@ -13113,6 +13113,8 @@ MonoBehaviour:
   finish: {fileID: 1279040764}
   failed: {fileID: 188520828}
   isFinished: 0
+  isWin: 0
+  isFailed: 0
   patientCounter: {fileID: 1217190134}
   goal: 3
 --- !u!1 &1258973672
@@ -19316,7 +19318,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5441494332871032521, guid: 366d5079b1b247e459e88b7e114a94f5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 366d5079b1b247e459e88b7e114a94f5, type: 3}
 --- !u!1 &1670342576
 GameObject:
