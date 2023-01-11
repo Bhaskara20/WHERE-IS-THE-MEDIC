@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Patient : MonoBehaviour
 {
@@ -31,12 +32,18 @@ public class Patient : MonoBehaviour
     public TextMeshProUGUI result;
 
     public float checkingTime;
+
+    private Scene scene;
+
     //public GameObject text;
 
     //public GameObject holder;
     // Start is called before the first frame update
     void Start()
     {
+
+        scene = SceneManager.GetActiveScene();
+
         checkingTime = PlayerPrefs.GetFloat("PlayerEfficiencys"); ;
         tensi = GameObject.FindWithTag("tensimeter");
         thermo = GameObject.FindWithTag("thermometer");
@@ -75,14 +82,25 @@ public class Patient : MonoBehaviour
            
         }
 
+        //day 1
+        if(scene.name == "Day1")
+        {
+            if (tensiChecked && thermoChecked && stetosChecked)
+            {
+                diagnozeResult1(1);
+                tensiChecked = false;
+                thermoChecked = false;
+                stetosChecked = false;
+            }
+        }
 
-        if (tensiChecked && thermoChecked && stetosChecked)
+        /*if (tensiChecked && thermoChecked && stetosChecked)
         {
             diagnozeResult(3);
             tensiChecked = false;
             thermoChecked = false;
             stetosChecked = false;
-        }
+        }*/
     }
 
     private IEnumerator delayTensi()
@@ -172,6 +190,20 @@ public class Patient : MonoBehaviour
             result.text = "Harus X-RAY";
             this.GetComponent<pickPatient>().enabled = true;
             this.GetComponent<XRAY>().enabled = true;
+        }
+    }
+
+    void diagnozeResult1(int Maxint)
+    {
+        int randomNum = Random.Range(1, Maxint + 1);
+        if (randomNum == 1)
+        {
+            Debug.Log("Butuh obat biru");
+            this.GetComponent<drinkBlue>().enabled = true;
+            //result.text = "Harus Cek Darah";
+            //this.GetComponent<pickPatient>().enabled = true;
+            //this.GetComponent<bloodTest>().enabled = true;
+
         }
     }
 }

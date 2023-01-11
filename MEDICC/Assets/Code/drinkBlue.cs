@@ -68,8 +68,8 @@ public class drinkBlue : MonoBehaviour
             gameObject.SetActive(false);
 
 
-            StartCoroutine(delaySpawn());
-            //patientSpawner.GetComponent<patientSpawner>().spawnPatient();
+            //StartCoroutine(delaySpawn());
+            patientSpawner.GetComponent<patientSpawner>().spawnPatient();
 
 
         }
