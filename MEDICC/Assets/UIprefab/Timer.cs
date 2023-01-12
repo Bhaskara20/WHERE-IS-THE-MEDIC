@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -22,9 +23,12 @@ public class Timer : MonoBehaviour
 
     public float goal;
 
+    public int nextLevel;
+
     // Start is called before the first frame update
     void Start()
     {
+        nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
         ResumeGame();
         timerCountdown = true;
     }
@@ -43,15 +47,35 @@ public class Timer : MonoBehaviour
             timerCountdown = false;
         }
 
+
+        //conditional win
+        if (timerFix >= 0 && patientCounter.GetComponent<counter>().nums >= goal)
+        {
+            finish.SetActive(true);
+
+            if (nextLevel > PlayerPrefs.GetInt("currLevel"))
+            {
+                PlayerPrefs.SetInt("currLevel", nextLevel);
+            }
+
+            PauseGame();
+        }
+
         //win lose condition
         if (timerFix <= 0f)
         {
             timerFix = 0;
             
             //win
-            if (patientCounter.GetComponent<counter>().nums == goal)
+            if (patientCounter.GetComponent<counter>().nums >= goal)
             {
                 finish.SetActive(true);
+
+                if (nextLevel > PlayerPrefs.GetInt("currLevel"))
+                {
+                    PlayerPrefs.SetInt("currLevel", nextLevel);
+                }
+
                 PauseGame();
             }else if (patientCounter.GetComponent<counter>().nums <= goal)
             {
@@ -62,6 +86,8 @@ public class Timer : MonoBehaviour
 
             
         }
+
+
         
 
 

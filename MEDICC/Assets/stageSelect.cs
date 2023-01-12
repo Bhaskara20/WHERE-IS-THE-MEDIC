@@ -54,4 +54,19 @@ public class stageSelect : MonoBehaviour
     {
         SceneManager.LoadScene("Day7");
     }
+
+    public void stage8()
+    {
+        SceneManager.LoadScene("Day8");
+    }
+
+    public void stage9()
+    {
+        SceneManager.LoadScene("Day9");
+    }
+
+    public void stage10()
+    {
+        SceneManager.LoadScene("Day10");
+    }
 }

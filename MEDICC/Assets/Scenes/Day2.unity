@@ -12512,6 +12512,7 @@ MonoBehaviour:
   isFailed: 0
   patientCounter: {fileID: 1217190134}
   goal: 3
+  nextLevel: 0
 --- !u!1 &1258973672
 GameObject:
   m_ObjectHideFlags: 0

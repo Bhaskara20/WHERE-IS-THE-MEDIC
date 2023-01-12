@@ -15,10 +15,12 @@ public class drinkBlue : MonoBehaviour
     //public TextMeshProUGUI patientCount;
     public GameObject counter;
 
+    public int coinCount;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        PlayerPrefs.GetInt("coin");
         //blueBottle = GameObject.FindWithTag("blueBottle");
     }
 
@@ -64,6 +66,11 @@ public class drinkBlue : MonoBehaviour
             bottle.transform.rotation = bottlePort.rotation;
 
             counter.GetComponent<counter>().addCount();
+
+            //--tambah uang--
+            coinCount += 1;
+            PlayerPrefs.SetInt("coin", coinCount);
+
             Debug.Log("Pasien Sembuh");
             gameObject.SetActive(false);
 

@@ -172,8 +172,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: -278}
-  m_SizeDelta: {x: 476.3469, y: 267.9451}
+  m_AnchoredPosition: {x: -131, y: -272.93042}
+  m_SizeDelta: {x: 212.5916, y: 209.6308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &161859376
 CanvasRenderer:
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14a20597634427c469fbdd54b11e2688, type: 3}
+  m_Sprite: {fileID: -924074286, guid: 14a20597634427c469fbdd54b11e2688, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -478,8 +478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170, y: -278}
-  m_SizeDelta: {x: 476.3469, y: 267.9451}
+  m_AnchoredPosition: {x: 209, y: -272.93}
+  m_SizeDelta: {x: 213.47, y: 209.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &239558982
 CanvasRenderer:
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 47476bbc6feb5ac44a0c4acd1f3db73e, type: 3}
+  m_Sprite: {fileID: 1456154760, guid: 47476bbc6feb5ac44a0c4acd1f3db73e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -562,7 +562,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 239558981}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 951499678}
+        m_TargetAssemblyTypeName: mainMenuButton, Assembly-CSharp
+        m_MethodName: next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &344869800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,6 +1509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dd8d4c68168b64a88dc4087aea8c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
 --- !u!1 &1117217937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4201,6 +4214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dd8d4c68168b64a88dc4087aea8c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
 --- !u!1 &3912589350909607947
 GameObject:
   m_ObjectHideFlags: 0

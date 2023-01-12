@@ -342,9 +342,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: mainMenus, Assembly-CSharp
-        m_MethodName: play
+      - m_Target: {fileID: 1140479515}
+        m_TargetAssemblyTypeName: stageSelect, Assembly-CSharp
+        m_MethodName: stage2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -476,9 +476,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: mainMenus, Assembly-CSharp
-        m_MethodName: play
+      - m_Target: {fileID: 1140479515}
+        m_TargetAssemblyTypeName: stageSelect, Assembly-CSharp
+        m_MethodName: stage3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -963,9 +963,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: mainMenus, Assembly-CSharp
-        m_MethodName: play
+      - m_Target: {fileID: 1140479515}
+        m_TargetAssemblyTypeName: stageSelect, Assembly-CSharp
+        m_MethodName: stage5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2127,6 +2127,7 @@ GameObject:
   - component: {fileID: 1140479512}
   - component: {fileID: 1140479511}
   - component: {fileID: 1140479515}
+  - component: {fileID: 1140479516}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2249,6 +2250,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isClear: 0
+--- !u!114 &1140479516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140479510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44de36fe8cd3c9b4d8a44edfdd59403c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayButtons:
+  - {fileID: 702539950}
+  - {fileID: 60776769}
+  - {fileID: 220537456}
+  - {fileID: 1527476444}
+  - {fileID: 636419072}
+  - {fileID: 1195035919}
+  - {fileID: 1741596315}
+  - {fileID: 1250151850}
+  - {fileID: 2032144665}
+  - {fileID: 225362721}
 --- !u!1 &1179578356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,9 +2586,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: mainMenus, Assembly-CSharp
-        m_MethodName: play
+      - m_Target: {fileID: 1140479515}
+        m_TargetAssemblyTypeName: stageSelect, Assembly-CSharp
+        m_MethodName: stage6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2837,9 +2861,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1140479515}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: stageSelect, Assembly-CSharp
-        m_MethodName: stage1
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3252,9 +3276,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: mainMenus, Assembly-CSharp
-        m_MethodName: play
+      - m_Target: {fileID: 1140479515}
+        m_TargetAssemblyTypeName: stageSelect, Assembly-CSharp
+        m_MethodName: stage4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3729,9 +3753,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: mainMenus, Assembly-CSharp
-        m_MethodName: play
+      - m_Target: {fileID: 1140479515}
+        m_TargetAssemblyTypeName: stageSelect, Assembly-CSharp
+        m_MethodName: stage7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class mainMenuButton : MonoBehaviour
 {
+
+    public GameObject timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +22,10 @@ public class mainMenuButton : MonoBehaviour
     public void back2main()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void next()
+    {
+        SceneManager.LoadScene(timer.GetComponent<Timer>().nextLevel);
     }
 }
