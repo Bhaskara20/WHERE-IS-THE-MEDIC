@@ -12,12 +12,14 @@ public class upgrade : MonoBehaviour
     public float medicalLevel;
     public float pharmacyLevel;
     public float chemistryLevel;
+    public int coins;
 
     public TextMeshProUGUI speeds;
     public TextMeshProUGUI efficiens;
     public TextMeshProUGUI medicals;
     public TextMeshProUGUI pharmas;
     public TextMeshProUGUI chemistt;
+    public TextMeshProUGUI currency;
 
     public float playerSpeed;
     public float playerEfficiency;
@@ -59,6 +61,11 @@ public class upgrade : MonoBehaviour
         //Store chemistry knowledge data
         chemistryLevel = PlayerPrefs.GetFloat("chemistryLevel");
         playerChemistry = PlayerPrefs.GetFloat("PlayerChemistrys");
+
+        //Store coin data
+        coins = PlayerPrefs.GetInt("coin");
+
+        currency.text = coins.ToString();
 
         //set speed default
         if (speedLevel == 0)

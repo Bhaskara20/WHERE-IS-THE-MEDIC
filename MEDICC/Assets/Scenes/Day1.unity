@@ -8586,6 +8586,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patient: {fileID: 2613639277748053054, guid: 19994a91673f08143b3a929c26e64f5c, type: 3}
+--- !u!114 &857934846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 857934846, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+  m_PrefabInstance: {fileID: 153227835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &863063448
 Mesh:
   m_ObjectHideFlags: 0
@@ -11885,6 +11896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counts: {fileID: 781255520}
   nums: 0
+  coinCount: 0
+  resultCoin: {fileID: 857934846}
 --- !u!4 &1217190136
 Transform:
   m_ObjectHideFlags: 0
@@ -21984,6 +21997,7 @@ MonoBehaviour:
   bottlePort: {fileID: 584747988}
   patientSpawner: {fileID: 852788119}
   counter: {fileID: 0}
+  coinCount: 0
 --- !u!43 &1805835289
 Mesh:
   m_ObjectHideFlags: 0

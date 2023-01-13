@@ -20,7 +20,7 @@ public class drinkBlue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.GetInt("coin");
+        //PlayerPrefs.GetInt("coin");
         //blueBottle = GameObject.FindWithTag("blueBottle");
     }
 
@@ -68,8 +68,8 @@ public class drinkBlue : MonoBehaviour
             counter.GetComponent<counter>().addCount();
 
             //--tambah uang--
-            coinCount += 1;
-            PlayerPrefs.SetInt("coin", coinCount);
+            //coinCount += 1;
+            //PlayerPrefs.SetInt("coin", coinCount);
 
             Debug.Log("Pasien Sembuh");
             gameObject.SetActive(false);
