@@ -361,6 +361,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2613639276498450804}
+  - {fileID: 3423350924940779065}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -379,7 +380,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2613639277748053054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -471,6 +472,7 @@ MonoBehaviour:
   thermobar: {fileID: 0}
   stetosbar: {fileID: 0}
   result: {fileID: 2613639277341370079}
+  checkingTime: 0
 --- !u!114 &2613639277748053031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,6 +513,7 @@ MonoBehaviour:
   homePoint: {fileID: 0}
   isReady: 0
   timeManagement: {fileID: 0}
+  checkingTime: 0
 --- !u!114 &2613639277748053029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,6 +531,7 @@ MonoBehaviour:
   homePoint: {fileID: 0}
   isReady: 0
   timeManagement: {fileID: 0}
+  checkingTime: 0
 --- !u!114 &2613639277748053050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,6 +550,7 @@ MonoBehaviour:
   isReady: 0
   BED: {fileID: 0}
   timeManagement: {fileID: 0}
+  checkingTime: 0
 --- !u!114 &2613639277748053051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,6 +568,8 @@ MonoBehaviour:
   bottle: {fileID: 0}
   bottlePort: {fileID: 0}
   patientSpawner: {fileID: 0}
+  counter: {fileID: 0}
+  coinCount: 0
 --- !u!114 &2613639277748053048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +587,7 @@ MonoBehaviour:
   bottle: {fileID: 0}
   bottlePort: {fileID: 0}
   patientSpawner: {fileID: 0}
+  counter: {fileID: 0}
 --- !u!114 &2613639277748053049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,6 +605,7 @@ MonoBehaviour:
   bottle: {fileID: 0}
   bottlePort: {fileID: 0}
   patientSpawner: {fileID: 0}
+  counter: {fileID: 0}
 --- !u!114 &-5711939843029148190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,3 +658,77 @@ MonoBehaviour:
   naik: 0
   harusNempel: 0
   scriptAgent: {fileID: 0}
+--- !u!1001 &2062651717835002516
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2613639277748053037}
+    m_Modifications:
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1874104
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.1874096
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.1874099
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065059297809028631, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+      propertyPath: m_Name
+      value: Pasien cowok
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+--- !u!4 &3423350924940779065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3684557233854483629, guid: b1fe607d97969d04c88c3cdb62bd0436, type: 3}
+  m_PrefabInstance: {fileID: 2062651717835002516}
+  m_PrefabAsset: {fileID: 0}

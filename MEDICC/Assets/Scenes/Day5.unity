@@ -1230,6 +1230,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 188520828, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3912589350143617256, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1358,6 +1362,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+--- !u!114 &153227836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1861719085, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+  m_PrefabInstance: {fileID: 153227835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &153227837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 857934846, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+  m_PrefabInstance: {fileID: 153227835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &159208063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7342516480152766764, guid: bd6b34c4ae4070845a76af209df05c0b, type: 3}
@@ -12305,6 +12331,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counts: {fileID: 781255520}
   nums: 0
+  coinCount: 0
+  resultCoin: {fileID: 153227837}
+  resultCoinLose: {fileID: 153227836}
 --- !u!4 &1217190136
 Transform:
   m_ObjectHideFlags: 0
@@ -13050,7 +13079,11 @@ MonoBehaviour:
   isWin: 0
   isFailed: 0
   patientCounter: {fileID: 1217190134}
+  patientNum: 0
   goal: 8
+  nextLevel: 0
+  coinCount: 0
+  currCoin: 0
 --- !u!1 &1258973672
 GameObject:
   m_ObjectHideFlags: 0
@@ -22930,6 +22963,7 @@ MonoBehaviour:
   bottlePort: {fileID: 584747988}
   patientSpawner: {fileID: 852788119}
   counter: {fileID: 0}
+  coinCount: 0
 --- !u!43 &1805835289
 Mesh:
   m_ObjectHideFlags: 0

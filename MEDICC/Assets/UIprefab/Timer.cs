@@ -20,14 +20,19 @@ public class Timer : MonoBehaviour
     public bool isFailed;
 
     public GameObject patientCounter;
+    public int patientNum;
 
     public float goal;
 
     public int nextLevel;
 
+    public int coinCount;
+    public int currCoin;
+
     // Start is called before the first frame update
     void Start()
     {
+        currCoin = PlayerPrefs.GetInt("coin");
         nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
         ResumeGame();
         timerCountdown = true;
@@ -52,7 +57,9 @@ public class Timer : MonoBehaviour
         if (timerFix >= 0 && patientCounter.GetComponent<counter>().nums >= goal)
         {
             finish.SetActive(true);
-
+            patientNum = patientCounter.GetComponent<counter>().nums;
+            coinCount = currCoin + patientNum;
+            PlayerPrefs.SetInt("coin", coinCount);
             if (nextLevel > PlayerPrefs.GetInt("currLevel"))
             {
                 PlayerPrefs.SetInt("currLevel", nextLevel);
@@ -70,7 +77,9 @@ public class Timer : MonoBehaviour
             if (patientCounter.GetComponent<counter>().nums >= goal)
             {
                 finish.SetActive(true);
-
+                patientNum = patientCounter.GetComponent<counter>().nums;
+                coinCount = currCoin + patientNum;
+                PlayerPrefs.SetInt("coin", coinCount);
                 if (nextLevel > PlayerPrefs.GetInt("currLevel"))
                 {
                     PlayerPrefs.SetInt("currLevel", nextLevel);
@@ -80,6 +89,9 @@ public class Timer : MonoBehaviour
             }else if (patientCounter.GetComponent<counter>().nums <= goal)
             {
                 //Debug.Log("KALAH");
+                patientNum = patientCounter.GetComponent<counter>().nums;
+                coinCount = currCoin + patientNum;
+                PlayerPrefs.SetInt("coin", coinCount);
                 failed.SetActive(true);
                 PauseGame();
             }
