@@ -35,6 +35,8 @@ public class Patient : MonoBehaviour
 
     private Scene scene;
 
+    public GameObject Player;
+
     //public GameObject text;
 
     //public GameObject holder;
@@ -52,12 +54,15 @@ public class Patient : MonoBehaviour
         tensiPort = GameObject.FindWithTag("tensiport").transform;
         thermoPort = GameObject.FindWithTag("thermoport").transform;
         stetoPort = GameObject.FindWithTag("stetoport").transform;
+
+        //Player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(readyTensi && Input.GetKeyUp("space"))
+        Player = GameObject.FindWithTag("Player");
+        if (readyTensi && Input.GetKeyUp("space"))
         {
             tensi.GetComponent<pickTool>().dropIt();
             tensi.transform.position = tensiPort.position;
@@ -139,7 +144,9 @@ public class Patient : MonoBehaviour
 
     private IEnumerator delayTensi()
     {
+        Player.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(checkingTime);
+        Player.GetComponent<PlayerMovement>().enabled = true;
         //tensibar.SetActive(true);
         tensiChecked = true;
         Debug.Log("Ukur Tensi");
@@ -147,14 +154,18 @@ public class Patient : MonoBehaviour
 
     private IEnumerator delayThermo()
     {
+        Player.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(checkingTime);
+        Player.GetComponent<PlayerMovement>().enabled = true;
         thermoChecked = true;
         Debug.Log("Ukur Suhu");
     }
 
     private IEnumerator delayStetos()
     {
+        Player.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(checkingTime);
+        Player.GetComponent<PlayerMovement>().enabled = true;
         stetosChecked = true;
         Debug.Log("Periksa Fisik");
     }

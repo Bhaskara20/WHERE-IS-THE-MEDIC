@@ -26,6 +26,8 @@ public class mortar : MonoBehaviour
 
     public float crushingTime;
 
+    public GameObject player;
+
     
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,8 @@ public class mortar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isRedReady && Input.GetKeyUp("space"))
+        player = GameObject.FindWithTag("Player");
+        if (isRedReady && Input.GetKeyUp("space"))
         {
             Debug.Log("Red Ingridient is on mortar!");
             redPutted.SetActive(true);
@@ -63,8 +66,10 @@ public class mortar : MonoBehaviour
 
     private IEnumerator crushing()
     {
+        player.GetComponent<PlayerMovement>().enabled = false;
         Debug.Log("Crushing the ingridient....");
         yield return new WaitForSeconds(crushingTime);
+        player.GetComponent<PlayerMovement>().enabled = true;
         if (red == true)
         {
             Debug.Log("red ingridient was crushed!");

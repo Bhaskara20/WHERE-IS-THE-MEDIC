@@ -12484,7 +12484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1322985830}
-  timerFix: 10
+  timerFix: 300
   finish: {fileID: 1279040764}
   failed: {fileID: 188520828}
   isFinished: 0
@@ -21880,6 +21880,7 @@ MonoBehaviour:
   stetosbar: {fileID: 0}
   result: {fileID: 148778725}
   checkingTime: 0
+  Player: {fileID: 0}
 --- !u!114 &1803682722
 MonoBehaviour:
   m_ObjectHideFlags: 0

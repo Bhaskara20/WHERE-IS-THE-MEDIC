@@ -20,6 +20,7 @@ public class pickIngridient : MonoBehaviour
 
     void Update()
     {
+        player = GameObject.FindWithTag("Player");
         isHolding = player.GetComponent<holdingStatus>().isHolding;
         if (isHolding == false && inReach && Input.GetKeyUp("space"))
         {

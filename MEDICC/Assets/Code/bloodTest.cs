@@ -49,7 +49,9 @@ public class bloodTest : MonoBehaviour
     private IEnumerator showResult()
     {
         blooodTest();
+        player.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(checkingTime);
+        player.GetComponent<PlayerMovement>().enabled = true;
         player.transform.position = homePoint.position;
         diagnozeResult(3);
     }

@@ -51,7 +51,9 @@ public class XRAY : MonoBehaviour
     private IEnumerator showResult()
     {
         xrayTest();
+        player.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(checkingTime);
+        player.GetComponent<PlayerMovement>().enabled = true;
         player.transform.position = homePoint.position;
         diagnozeResult(3);
 
