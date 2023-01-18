@@ -5959,7 +5959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eed34cfbecbc264da1066388face7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patient: {fileID: 2613639277748053054, guid: 25617aafc662d9d44aefd00cf291c5ed, type: 3}
+  patient: {fileID: 2613639277748053054, guid: aa419811153b8314a8af22f05f4db1ba, type: 3}
 --- !u!136 &686243255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22928,6 +22928,15 @@ MonoBehaviour:
   result: {fileID: 148778725}
   checkingTime: 0
   Player: {fileID: 0}
+  tensiIcon: {fileID: 0}
+  thermoIcon: {fileID: 0}
+  stetosIcon: {fileID: 0}
+  redPot: {fileID: 0}
+  bluePot: {fileID: 0}
+  yellowPot: {fileID: 0}
+  pcrIcon: {fileID: 0}
+  bloodLabIcon: {fileID: 0}
+  xrayIcon: {fileID: 0}
 --- !u!114 &1803682722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22988,6 +22997,7 @@ MonoBehaviour:
   isReady: 0
   timeManagement: {fileID: 544765902}
   checkingTime: 0
+  patient: {fileID: 0}
 --- !u!114 &1803682725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24387,7 +24397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eed34cfbecbc264da1066388face7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patient: {fileID: 2613639277748053054, guid: 26a33f127b3801f4b996591f51d3ed22, type: 3}
+  patient: {fileID: 2613639277748053054, guid: def96a3aeb8ebe84eb12afe14d680c83, type: 3}
 --- !u!136 &2099245430
 CapsuleCollider:
   m_ObjectHideFlags: 0

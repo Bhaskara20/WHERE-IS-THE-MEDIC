@@ -33,6 +33,7 @@ public class bloodTest : MonoBehaviour
             //timeManagement.GetComponent<BloodTimer>().enabled = true;
             //holdit();
             //showResult();
+            gameObject.GetComponent<Patient>().bloodLabIcon.SetActive(false);
             StartCoroutine(showResult());
 
         }
@@ -82,6 +83,7 @@ public class bloodTest : MonoBehaviour
         {
             Debug.Log("Butuh obat biru");
             this.GetComponent<drinkBlue>().enabled = true;
+            gameObject.GetComponent<Patient>().bluePot.SetActive(true);
             //result.text = "Harus Cek Darah";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<bloodTest>().enabled = true;
@@ -91,6 +93,7 @@ public class bloodTest : MonoBehaviour
         {
             Debug.Log("Butuh obat merah");
             this.GetComponent<drinkRed>().enabled = true;
+            gameObject.GetComponent<Patient>().redPot.SetActive(true);
             //result.text = "Harus Test PCR";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<PCR>().enabled = true;
@@ -99,6 +102,7 @@ public class bloodTest : MonoBehaviour
         {
             Debug.Log("Butuh obat kuning");
             this.GetComponent<drinkYellow>().enabled = true;
+            gameObject.GetComponent<Patient>().yellowPot.SetActive(true);
             //result.text = "Harus X-RAY";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<XRAY>().enabled = true;

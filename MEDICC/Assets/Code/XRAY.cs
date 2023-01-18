@@ -32,6 +32,7 @@ public class XRAY : MonoBehaviour
         {
             //timeManagement.GetComponent<XrayTimer>().enabled = true;
             //holdit();
+            gameObject.GetComponent<Patient>().xrayIcon.SetActive(false);
             StartCoroutine(showResult());
 
 
@@ -84,6 +85,7 @@ public class XRAY : MonoBehaviour
         {
             Debug.Log("Butuh obat biru");
             this.GetComponent<drinkBlue>().enabled = true;
+            gameObject.GetComponent<Patient>().bluePot.SetActive(true);
             //result.text = "Harus Cek Darah";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<bloodTest>().enabled = true;
@@ -93,6 +95,7 @@ public class XRAY : MonoBehaviour
         {
             Debug.Log("Butuh obat merah");
             this.GetComponent<drinkRed>().enabled = true;
+            gameObject.GetComponent<Patient>().redPot.SetActive(true);
             //result.text = "Harus Test PCR";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<PCR>().enabled = true;
@@ -101,6 +104,7 @@ public class XRAY : MonoBehaviour
         {
             Debug.Log("Butuh obat kuning");
             this.GetComponent<drinkYellow>().enabled = true;
+            gameObject.GetComponent<Patient>().yellowPot.SetActive(true);
             //result.text = "Harus X-RAY";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<XRAY>().enabled = true;

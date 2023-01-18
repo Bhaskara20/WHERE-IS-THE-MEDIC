@@ -15,6 +15,8 @@ public class PCR : MonoBehaviour
 
     public float checkingTime;
 
+    public GameObject patient;
+
 
     private void Start()
     {
@@ -34,7 +36,9 @@ public class PCR : MonoBehaviour
             //timeManagement.GetComponent<PcrTimer>().enabled = true;
             //holdit();
             //pcrTest();
+            gameObject.GetComponent<Patient>().pcrIcon.SetActive(false);
             StartCoroutine(showResult());
+            //gameObject.GetComponent<Patient>().pcrIcon.SetActive(false);
 
 
 
@@ -91,6 +95,7 @@ public class PCR : MonoBehaviour
         {
             Debug.Log("Butuh obat biru");
             this.GetComponent<drinkBlue>().enabled = true;
+            gameObject.GetComponent<Patient>().bluePot.SetActive(true);
             //result.text = "Harus Cek Darah";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<bloodTest>().enabled = true;
@@ -100,6 +105,7 @@ public class PCR : MonoBehaviour
         {
             Debug.Log("Butuh obat merah");
             this.GetComponent<drinkRed>().enabled = true;
+            gameObject.GetComponent<Patient>().redPot.SetActive(true);
             //result.text = "Harus Test PCR";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<PCR>().enabled = true;
@@ -108,6 +114,7 @@ public class PCR : MonoBehaviour
         {
             Debug.Log("Butuh obat kuning");
             this.GetComponent<drinkYellow>().enabled = true;
+            gameObject.GetComponent<Patient>().yellowPot.SetActive(true);
             //result.text = "Harus X-RAY";
             //this.GetComponent<pickPatient>().enabled = true;
             //this.GetComponent<XRAY>().enabled = true;

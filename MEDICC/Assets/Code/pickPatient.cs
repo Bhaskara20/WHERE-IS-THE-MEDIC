@@ -105,6 +105,7 @@ public class pickPatient : MonoBehaviour
         this.transform.rotation = sleepPos.rotation;
         isCarried = false;
         player.GetComponent<holdingStatus>().isHolding = false;
+        text.SetActive(true);
 
     }
 

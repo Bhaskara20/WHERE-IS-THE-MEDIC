@@ -37,6 +37,18 @@ public class Patient : MonoBehaviour
 
     public GameObject Player;
 
+    public GameObject tensiIcon;
+    public GameObject thermoIcon;
+    public GameObject stetosIcon;
+
+    public GameObject redPot;
+    public GameObject bluePot;
+    public GameObject yellowPot;
+
+    public GameObject pcrIcon;
+    public GameObject bloodLabIcon;
+    public GameObject xrayIcon;
+
     //public GameObject text;
 
     //public GameObject holder;
@@ -96,6 +108,7 @@ public class Patient : MonoBehaviour
                 tensiChecked = false;
                 thermoChecked = false;
                 stetosChecked = false;
+                bluePot.SetActive(true);
             }
         }
 
@@ -108,6 +121,8 @@ public class Patient : MonoBehaviour
                 tensiChecked = false;
                 thermoChecked = false;
                 stetosChecked = false;
+                redPot.SetActive(true);
+                bluePot.SetActive(true);
             }
         }
 
@@ -119,6 +134,9 @@ public class Patient : MonoBehaviour
                 tensiChecked = false;
                 thermoChecked = false;
                 stetosChecked = false;
+                redPot.SetActive(true);
+                bluePot.SetActive(true);
+                yellowPot.SetActive(true);
             }
         }
 
@@ -150,6 +168,8 @@ public class Patient : MonoBehaviour
         //tensibar.SetActive(true);
         tensiChecked = true;
         Debug.Log("Ukur Tensi");
+        tensiIcon.SetActive(false);
+
     }
 
     private IEnumerator delayThermo()
@@ -159,6 +179,7 @@ public class Patient : MonoBehaviour
         Player.GetComponent<PlayerMovement>().enabled = true;
         thermoChecked = true;
         Debug.Log("Ukur Suhu");
+        thermoIcon.SetActive(false);
     }
 
     private IEnumerator delayStetos()
@@ -168,6 +189,7 @@ public class Patient : MonoBehaviour
         Player.GetComponent<PlayerMovement>().enabled = true;
         stetosChecked = true;
         Debug.Log("Periksa Fisik");
+        stetosIcon.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -221,6 +243,7 @@ public class Patient : MonoBehaviour
             result.text = "Harus Cek Darah";
             this.GetComponent<pickPatient>().enabled = true;
             this.GetComponent<bloodTest>().enabled = true;
+            bloodLabIcon.SetActive(true);
             
         }else if(randomNum == 2)
         {
@@ -228,6 +251,7 @@ public class Patient : MonoBehaviour
             result.text = "Harus Test PCR";
             this.GetComponent<pickPatient>().enabled = true;
             this.GetComponent<PCR>().enabled = true;
+            pcrIcon.SetActive(true);
         }
         else if(randomNum == 3)
         {
@@ -235,6 +259,7 @@ public class Patient : MonoBehaviour
             result.text = "Harus X-RAY";
             this.GetComponent<pickPatient>().enabled = true;
             this.GetComponent<XRAY>().enabled = true;
+            xrayIcon.SetActive(true);
         }
     }
 

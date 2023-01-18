@@ -11,8 +11,14 @@ public class naikKasur : MonoBehaviour
     public bool harusNempel;
 
     public NavMeshAgent scriptAgent;
+
+    public GameObject tensiIcon;
+    public GameObject thermoIcon;
+    public GameObject stetosIcon;
+
+    public bool once;
     //public GameObject sleepposs;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +40,15 @@ public class naikKasur : MonoBehaviour
             this.transform.position = sleepPos.position;
             this.transform.rotation = sleepPos.rotation;
             this.GetComponent<PatientAI>().enabled = false;
+
+            if (once == false)
+            {
+                tensiIcon.SetActive(true);
+                thermoIcon.SetActive(true);
+                stetosIcon.SetActive(true);
+            }
+            
+            once = true;
             //this.GetComponent<naikKasur>().enabled = false;
             //StartCoroutine(penyelamat());
 
