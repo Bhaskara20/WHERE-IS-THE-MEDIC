@@ -49,6 +49,10 @@ public class Patient : MonoBehaviour
     public GameObject bloodLabIcon;
     public GameObject xrayIcon;
 
+    public AudioSource thermoBeep;
+    public AudioSource tensiPump;
+    public AudioSource heartBeat;
+
     //public GameObject text;
 
     //public GameObject holder;
@@ -163,7 +167,9 @@ public class Patient : MonoBehaviour
     private IEnumerator delayTensi()
     {
         Player.GetComponent<PlayerMovement>().enabled = false;
+        tensiPump.Play();
         yield return new WaitForSeconds(checkingTime);
+        tensiPump.Stop();
         Player.GetComponent<PlayerMovement>().enabled = true;
         //tensibar.SetActive(true);
         tensiChecked = true;
@@ -176,6 +182,7 @@ public class Patient : MonoBehaviour
     {
         Player.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(checkingTime);
+        thermoBeep.Play();
         Player.GetComponent<PlayerMovement>().enabled = true;
         thermoChecked = true;
         Debug.Log("Ukur Suhu");
@@ -185,7 +192,9 @@ public class Patient : MonoBehaviour
     private IEnumerator delayStetos()
     {
         Player.GetComponent<PlayerMovement>().enabled = false;
+        heartBeat.Play();
         yield return new WaitForSeconds(checkingTime);
+        heartBeat.Stop();
         Player.GetComponent<PlayerMovement>().enabled = true;
         stetosChecked = true;
         Debug.Log("Periksa Fisik");

@@ -14,6 +14,8 @@ public class fillBottle : MonoBehaviour
     public GameObject emptyObject;
 
     public GameObject couldron;
+    public AudioSource potionFillbottle;
+    public AudioSource bottleClank;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class fillBottle : MonoBehaviour
         if(isBlueSyrup && Input.GetKeyUp("space"))
         {
             Debug.Log("The bottle filled with Blue Syrup");
+            potionFillbottle.Play();
             blueBottle.SetActive(true);
             couldron.GetComponent<couldron>().emptySyrup();
             couldron.GetComponent<couldron>().isBlueBoiled = false;
@@ -40,6 +43,7 @@ public class fillBottle : MonoBehaviour
         if (isRedSyrup && Input.GetKeyUp("space"))
         {
             Debug.Log("The bottle filled with Red Syrup");
+            potionFillbottle.Play();
             redBottle.SetActive(true);
             couldron.GetComponent<couldron>().emptySyrup();
             couldron.GetComponent<couldron>().isBlueBoiled = false;
@@ -52,6 +56,7 @@ public class fillBottle : MonoBehaviour
         if (isYellowSyrup && Input.GetKeyUp("space"))
         {
             Debug.Log("The bottle filled with Yellow Syrup");
+            potionFillbottle.Play();
             yellowBottle.SetActive(true);
             couldron.GetComponent<couldron>().emptySyrup();
             couldron.GetComponent<couldron>().isBlueBoiled = false;

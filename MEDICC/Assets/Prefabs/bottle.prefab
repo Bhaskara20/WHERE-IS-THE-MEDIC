@@ -155,6 +155,7 @@ MonoBehaviour:
   isHolding: 0
   isHoldingAlter: 0
   player: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!114 &6713545609683045929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +176,8 @@ MonoBehaviour:
   yellowBottle: {fileID: 0}
   emptyObject: {fileID: 0}
   couldron: {fileID: 0}
+  potionFillbottle: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!1 &6713545610291186809
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +194,8 @@ GameObject:
   - component: {fileID: 6713545610291186810}
   - component: {fileID: 6713545610291186800}
   - component: {fileID: 6713545610291186801}
+  - component: {fileID: 1917142650}
+  - component: {fileID: 1917142651}
   m_Layer: 0
   m_Name: bottle
   m_TagString: bottle
@@ -333,6 +338,7 @@ MonoBehaviour:
   isHolding: 0
   isHoldingAlter: 0
   player: {fileID: 0}
+  bottleClank: {fileID: 1917142651}
 --- !u!114 &6713545610291186801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +359,200 @@ MonoBehaviour:
   yellowBottle: {fileID: 6713545611190081125}
   emptyObject: {fileID: 0}
   couldron: {fileID: 0}
+  potionFillbottle: {fileID: 1917142650}
+  bottleClank: {fileID: 1917142651}
+--- !u!82 &1917142650
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6713545610291186809}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d1d78c5d23abe3c4f95d069bef3ac50b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1917142651
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6713545610291186809}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a93328d29bbe9474c845657d75d10b15, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6713545611190081125
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +708,7 @@ MonoBehaviour:
   isHolding: 0
   isHoldingAlter: 0
   player: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!114 &6713545611190081127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,6 +729,8 @@ MonoBehaviour:
   yellowBottle: {fileID: 6713545611190081125}
   emptyObject: {fileID: 0}
   couldron: {fileID: 0}
+  potionFillbottle: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!1 &6713545611360512653
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +886,7 @@ MonoBehaviour:
   isHolding: 0
   isHoldingAlter: 0
   player: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!114 &6713545611360512655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,6 +907,8 @@ MonoBehaviour:
   yellowBottle: {fileID: 0}
   emptyObject: {fileID: 0}
   couldron: {fileID: 0}
+  potionFillbottle: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!1001 &6713545609805386981
 PrefabInstance:
   m_ObjectHideFlags: 0

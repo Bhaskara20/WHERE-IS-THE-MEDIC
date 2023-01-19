@@ -13,6 +13,7 @@ public class pickBottle : MonoBehaviour
     public bool isHolding;
     public bool isHoldingAlter;
     public GameObject player;
+    public AudioSource bottleClank;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class pickBottle : MonoBehaviour
         isHolding = player.GetComponent<holdingStatus>().isHolding;
         if (isHolding == false && inReach && Input.GetKeyUp("space"))
         {
+            bottleClank.Play();
             holdit();
             player.GetComponent<holdingStatus>().isHolding = true;
             isHoldingAlter = true;

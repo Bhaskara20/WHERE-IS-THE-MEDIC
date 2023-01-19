@@ -28,6 +28,7 @@ public class mortar : MonoBehaviour
 
     public GameObject player;
 
+    public AudioSource crushingSFX;
     
     // Start is called before the first frame update
     void Start()
@@ -68,7 +69,9 @@ public class mortar : MonoBehaviour
     {
         player.GetComponent<PlayerMovement>().enabled = false;
         Debug.Log("Crushing the ingridient....");
+        crushingSFX.Play();
         yield return new WaitForSeconds(crushingTime);
+        crushingSFX.Stop();
         player.GetComponent<PlayerMovement>().enabled = true;
         if (red == true)
         {

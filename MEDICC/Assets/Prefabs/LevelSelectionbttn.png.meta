@@ -1,0 +1,1521 @@
+fileFormatVersion: 2
+guid: 9247f46fb78ef7846900fe87f6777375
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LevelSelectionbttn_0
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 923
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4951997520f9e4ea3aeed6e4a96d5a
+      internalID: 594828395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 922
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327854d52006ab24dbafe1f8cefc0cc4
+      internalID: -2136604064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_2
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 908
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b86ac01f3c14943a973169547a0f9e
+      internalID: 1377694366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 922
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105c0525e06f810428a6d164606db90c
+      internalID: -434284825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_4
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 786
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62aea25a9c2c17458ee3d1613b668b8
+      internalID: -1229299042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_5
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 785
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4338bc6f49d89454fa06f286b8465982
+      internalID: 479273304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_6
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 772
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d464b0794e346a144b21ebe51f32af50
+      internalID: -1729069816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_7
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 785
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4b93c4a79389b48aa428189b2cbfd4
+      internalID: 2011462675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_8
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 702
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e2014012c13a54ebafc743b341f05a
+      internalID: -1723617049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_9
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 702
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f158a27558de74989061696fda2690
+      internalID: 806724739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_10
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 691
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69c9166fd5f0b14cb52b39cefaf9780
+      internalID: 297983650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_11
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 702
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040724909b016b34f95cf03c4d6ea117
+      internalID: -1054016858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 648
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d3f933160b81f418f800456809e19b
+      internalID: -1661877556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_13
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 647
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b0274b17e6d544ca867abff011c9cd
+      internalID: -275647666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_14
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 634
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa8ae5c822a25241aabe2c06d93ae10
+      internalID: -1085089091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_15
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 647
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b2e3f1858067046a8fbd45c5fe0ee3
+      internalID: -203832872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_16
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 592
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bceb8d883bdb742a02bc84baab9159
+      internalID: 973395978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_17
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 592
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21e40a478fe078459b38f0894e5c613
+      internalID: -1779943356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_18
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 581
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af24ed94922bb3445952f379905cc9bb
+      internalID: 312750667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_19
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 592
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376d6da5db07dbb48b832d69ea59e0c7
+      internalID: -700039108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_20
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 513
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46440ceadc4e6ba4e8547b038d57f584
+      internalID: -70863145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_21
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 512
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9715da8095ba06d429100f1983d865a6
+      internalID: 210153726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_22
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 499
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e0734bdb013634aa16a03bfe87a76a
+      internalID: -1689462066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_23
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 512
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f896bc293666a46b3da0d68e0283ff
+      internalID: 964860882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_24
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 481
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e4f9a09ca131f4e8915481b7dde6fc
+      internalID: -435128223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_25
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 481
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4c3d1b598573840b5d80d79432be0b
+      internalID: -559269035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_26
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 481
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b14887051c8cb418544228b2955bed
+      internalID: -731350482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_27
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 481
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be17f75f81f2e11448e74d8cc7167fea
+      internalID: 1458490943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_28
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 470
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765734188e4db4942891c780a1dbbc0a
+      internalID: -289872341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_29
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 370
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4cdc27d13d5e04d9e70fc98bd715bf
+      internalID: -1695134034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_30
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 369
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2604f4676ca1d4faa2910dc77581d9
+      internalID: -1177665093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_31
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 355
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d85723ec4498f4788e4252a52d9cc9
+      internalID: -89393111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_32
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 368
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c41af169953e142af9278f332167e5
+      internalID: 113975443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_33
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 376
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba468c49686a50041947199ad31d5e12
+      internalID: -914827127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_34
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 402
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f20a539d00aff04daae7b1a56d74a2c
+      internalID: -817099907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_35
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 376
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735016c6ce10f5445a0de713e972575e
+      internalID: -923841192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_36
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 376
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c002f50fb59a70a4299f39c2dcfae1a3
+      internalID: -1834401736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_37
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 376
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46db340e6451b34d8284b8af9272280
+      internalID: 2118770606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_38
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 376
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5facdf36850f96a4d8d75e3c554a9133
+      internalID: -1593413139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_39
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 376
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe8f3df4df971c4289ce95803015b07
+      internalID: 774795601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_40
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 368
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e24e800cf60764d8248935a8350f4e
+      internalID: -1192443856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_41
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 376
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c3b40e18ad242428d3f9afd167861d
+      internalID: -547025684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_42
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 376
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776d36a306dfbbb4da013089a840fd77
+      internalID: -1246855344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_43
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 376
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61315fbea4abad143a2bec84f31026e7
+      internalID: -184146940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_44
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 230
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a46535b5bd294d47a09077d9087a63e
+      internalID: -1628457417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_45
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 229
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7df2a66098e2e94bab882a1b1089f88
+      internalID: -52679606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_46
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 216
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017cce2bc7d680a42a3b4a3c96bf2b06
+      internalID: -993800465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_47
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 229
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64efc8f6e7dd5144880cce9889fa6b74
+      internalID: -35354688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_48
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 91
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ca9b294be4e1740bbfc882014018e4
+      internalID: 1552005133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_49
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 90
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc01aa4d8d1db64190f5a2c34042b5b
+      internalID: 489216936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_50
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 76
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a338d2cfe9f8d447a7380bd289fb8e3
+      internalID: -1178837691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_51
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 90
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0568085c42fa2b042bfaa73a1d8d9873
+      internalID: 802861263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_52
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 905
+        width: 212
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2639df269fd39fe40a6f81b4c25644e8
+      internalID: 910325495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_53
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 764
+        width: 218
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f28a4ddd4144984da57acfba12a9523
+      internalID: 1233762920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_54
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 624
+        width: 223
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d440fdde3ab03364ebf4eaf5547a07f1
+      internalID: 182715273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_55
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 490
+        width: 228
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d2982b465609f40b491e7394d6bc9f
+      internalID: -624374754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_56
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 342
+        width: 230
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c066223d1d369349a510214c5714c48
+      internalID: -652994887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_57
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 205
+        width: 228
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c702c0bfa4a6d7b40854a2141df91dee
+      internalID: 646785703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_58
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 70
+        width: 226
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d261311c5828a741932692c8aa474e6
+      internalID: 85311529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_59
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 681
+        width: 180
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2eb49b4ac52eee4eb698b9c97dea5ea
+      internalID: -612128071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_60
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 574
+        width: 185
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dd744841bc4ce4bb9410682903dce2
+      internalID: 1070395361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_61
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 456
+        width: 220
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917ada7f6803595498a805f27cd446f7
+      internalID: -803672751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelSelectionbttn_62
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 358
+        width: 289
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9f98d3251bfa34e9fc6939b4d0c04d
+      internalID: 665437589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 923d5ac96a829ec419236267c0a8237c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      LevelSelectionbttn_45: -52679606
+      LevelSelectionbttn_11: -1054016858
+      LevelSelectionbttn_28: -289872341
+      LevelSelectionbttn_2: 1377694366
+      LevelSelectionbttn_20: -70863145
+      LevelSelectionbttn_3: -434284825
+      LevelSelectionbttn_49: 489216936
+      LevelSelectionbttn_59: -612128071
+      LevelSelectionbttn_51: 802861263
+      LevelSelectionbttn_7: 2011462675
+      LevelSelectionbttn_48: 1552005133
+      LevelSelectionbttn_10: 297983650
+      LevelSelectionbttn_1: -2136604064
+      LevelSelectionbttn_56: -652994887
+      LevelSelectionbttn_54: 182715273
+      LevelSelectionbttn_5: 479273304
+      LevelSelectionbttn_0: 594828395
+      LevelSelectionbttn_62: 665437589
+      LevelSelectionbttn_6: -1729069816
+      LevelSelectionbttn_55: -624374754
+      LevelSelectionbttn_38: -1593413139
+      LevelSelectionbttn_50: -1178837691
+      LevelSelectionbttn_13: -275647666
+      LevelSelectionbttn_46: -993800465
+      LevelSelectionbttn_47: -35354688
+      LevelSelectionbttn_23: 964860882
+      LevelSelectionbttn_31: -89393111
+      LevelSelectionbttn_57: 646785703
+      LevelSelectionbttn_25: -559269035
+      LevelSelectionbttn_26: -731350482
+      LevelSelectionbttn_12: -1661877556
+      LevelSelectionbttn_36: -1834401736
+      LevelSelectionbttn_27: 1458490943
+      LevelSelectionbttn_14: -1085089091
+      LevelSelectionbttn_53: 1233762920
+      LevelSelectionbttn_58: 85311529
+      LevelSelectionbttn_9: 806724739
+      LevelSelectionbttn_40: -1192443856
+      LevelSelectionbttn_19: -700039108
+      LevelSelectionbttn_21: 210153726
+      LevelSelectionbttn_42: -1246855344
+      LevelSelectionbttn_39: 774795601
+      LevelSelectionbttn_24: -435128223
+      LevelSelectionbttn_32: 113975443
+      LevelSelectionbttn_61: -803672751
+      LevelSelectionbttn_17: -1779943356
+      LevelSelectionbttn_34: -817099907
+      LevelSelectionbttn_8: -1723617049
+      LevelSelectionbttn_18: 312750667
+      LevelSelectionbttn_22: -1689462066
+      LevelSelectionbttn_41: -547025684
+      LevelSelectionbttn_15: -203832872
+      LevelSelectionbttn_30: -1177665093
+      LevelSelectionbttn_60: 1070395361
+      LevelSelectionbttn_37: 2118770606
+      LevelSelectionbttn_4: -1229299042
+      LevelSelectionbttn_29: -1695134034
+      LevelSelectionbttn_35: -923841192
+      LevelSelectionbttn_16: 973395978
+      LevelSelectionbttn_44: -1628457417
+      LevelSelectionbttn_43: -184146940
+      LevelSelectionbttn_52: 910325495
+      LevelSelectionbttn_33: -914827127
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

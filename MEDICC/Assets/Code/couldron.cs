@@ -28,10 +28,16 @@ public class couldron : MonoBehaviour
 
     public float boilingTime;
 
+    public AudioSource boilSFX;
+
+    public GameObject mixing;
+
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindWithTag("Player");
         boilingTime = PlayerPrefs.GetFloat("PlayerChemistrys");
 
         redPowder = GameObject.FindWithTag("redPowder");
@@ -88,8 +94,14 @@ public class couldron : MonoBehaviour
         //    bluePutted.SetActive(false);
         //    Instantiate(crushedBlue, crushedSpawner.transform.position, Quaternion.identity);
         //}
+        boilSFX.Play();
+        player.GetComponent<PlayerMovement>().enabled = false;
+        mixing.SetActive(true);
         Debug.Log("Boiling the powder....");
         yield return new WaitForSeconds(boilingTime);
+        boilSFX.Stop();
+        player.GetComponent<PlayerMovement>().enabled = true;
+        mixing.SetActive(false);
 
         if (red == true)
         {
@@ -149,8 +161,14 @@ public class couldron : MonoBehaviour
     {
         red = false;
         blue = false;
+        boilSFX.Play();
+        mixing.SetActive(true);
+        player.GetComponent<PlayerMovement>().enabled = false;
         Debug.Log("Mixing the syrup....");
         yield return new WaitForSeconds(boilingTime);
+        mixing.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = true;
+        boilSFX.Stop();
         Debug.Log("the yellow medicine has been concocted");
         redSyrup.SetActive(false);
         blueSyrup.SetActive(false);

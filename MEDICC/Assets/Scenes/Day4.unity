@@ -5310,6 +5310,8 @@ MonoBehaviour:
   yellowBottle: {fileID: 0}
   emptyObject: {fileID: 0}
   couldron: {fileID: 0}
+  potionFillbottle: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!114 &584747982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5328,6 +5330,7 @@ MonoBehaviour:
   isHolding: 0
   isHoldingAlter: 0
   player: {fileID: 0}
+  bottleClank: {fileID: 0}
 --- !u!54 &584747983
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5959,7 +5962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eed34cfbecbc264da1066388face7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patient: {fileID: 2613639277748053054, guid: aa419811153b8314a8af22f05f4db1ba, type: 3}
+  patient: {fileID: 2613639277748053054, guid: b2a94f2549a2f594d9e0b81d00ba8a79, type: 3}
 --- !u!136 &686243255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10071,6 +10074,11 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1027750721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 537199806, guid: c306bcfe63049fa4eb5cb1e46e560938, type: 3}
+  m_PrefabInstance: {fileID: 29844711921287493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1045500047
 GameObject:
   m_ObjectHideFlags: 0
@@ -10664,6 +10672,11 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1124699038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1266481632, guid: c306bcfe63049fa4eb5cb1e46e560938, type: 3}
+  m_PrefabInstance: {fileID: 29844711921287493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1127278816
 GameObject:
   m_ObjectHideFlags: 0
@@ -18080,7 +18093,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-55782
+  m_Name: pb_Mesh-99660
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18238,6 +18251,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1514943956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 409779978, guid: c306bcfe63049fa4eb5cb1e46e560938, type: 3}
+  m_PrefabInstance: {fileID: 29844711921287493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1524418090
 GameObject:
   m_ObjectHideFlags: 0
@@ -22937,6 +22955,9 @@ MonoBehaviour:
   pcrIcon: {fileID: 0}
   bloodLabIcon: {fileID: 0}
   xrayIcon: {fileID: 0}
+  thermoBeep: {fileID: 0}
+  tensiPump: {fileID: 0}
+  heartBeat: {fileID: 0}
 --- !u!114 &1803682722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24397,7 +24418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eed34cfbecbc264da1066388face7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patient: {fileID: 2613639277748053054, guid: def96a3aeb8ebe84eb12afe14d680c83, type: 3}
+  patient: {fileID: 2613639277748053054, guid: c06d1c74f68873441b3eec4c73824b29, type: 3}
 --- !u!136 &2099245430
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24827,15 +24848,15 @@ PrefabInstance:
     - target: {fileID: 29844711857147282, guid: c306bcfe63049fa4eb5cb1e46e560938, type: 3}
       propertyPath: redSyrup
       value: 
-      objectReference: {fileID: 1829231471}
+      objectReference: {fileID: 1027750721}
     - target: {fileID: 29844711857147282, guid: c306bcfe63049fa4eb5cb1e46e560938, type: 3}
       propertyPath: blueSyrup
       value: 
-      objectReference: {fileID: 647108151}
+      objectReference: {fileID: 1124699038}
     - target: {fileID: 29844711857147282, guid: c306bcfe63049fa4eb5cb1e46e560938, type: 3}
       propertyPath: yellowSyrup
       value: 
-      objectReference: {fileID: 409779978}
+      objectReference: {fileID: 1514943956}
     - target: {fileID: 29844711857147293, guid: c306bcfe63049fa4eb5cb1e46e560938, type: 3}
       propertyPath: redPort
       value: 
