@@ -35,6 +35,13 @@ public class upgrade : MonoBehaviour
 
     public int coinCount;
     public int currCoin;
+    public int coinSetter;
+
+    public TextMeshProUGUI biayaSpeed;
+    public TextMeshProUGUI biayaEfficiency;
+    public TextMeshProUGUI biayaMedical;
+    public TextMeshProUGUI biayaPharmacy;
+    public TextMeshProUGUI biayaChemistry;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +59,7 @@ public class upgrade : MonoBehaviour
         }*/
 
         currCoin = PlayerPrefs.GetInt("coin");
+        coinSetter = PlayerPrefs.GetInt("coin");
 
         Speedcost = PlayerPrefs.GetInt("speedCost");
         efficiencycost = PlayerPrefs.GetInt("efficiencycost");
@@ -84,6 +92,11 @@ public class upgrade : MonoBehaviour
         coins = PlayerPrefs.GetInt("coin");
 
         currency.text = coins.ToString();
+        biayaSpeed.text = "Cost : " + Speedcost.ToString() + "c";
+        biayaEfficiency.text = "Cost : " + efficiencycost.ToString() + "c";
+        biayaMedical.text = "Cost : " + medicalcost.ToString() + "c";
+        biayaPharmacy.text = "Cost : " + pharmacycost.ToString() + "c";
+        biayaChemistry.text = "Cost : " + chemistrycost.ToString() + "c";
 
         //set speed default
         if (speedLevel == 0)
@@ -135,69 +148,109 @@ public class upgrade : MonoBehaviour
         medicals.text = "Lvl " + medicalLevel.ToString();
         pharmas.text = "Lvl " + pharmacyLevel.ToString();
         chemistt.text = "Lvl " + chemistryLevel.ToString();
+
+        if (coinSetter < 0)
+        {
+            coinSetter = 0;
+            PlayerPrefs.SetInt("coin", coinSetter);
+        }
+
     }
 
     public void speedUpgrade()
     {
-        speedLevel += 1;
-        playerSpeed += 0.2f;
-        //coinCount = currCoin - Speedcost;
-        currCoin -= Speedcost;
-        PlayerPrefs.SetInt("coin", currCoin);
-        Speedcost += 5;
-        PlayerPrefs.SetFloat("PlayerSpeeds", playerSpeed);
-        PlayerPrefs.SetFloat("speedLevel", speedLevel);
-        PlayerPrefs.SetInt("speedCost", Speedcost);
+        if (currCoin >= Speedcost)
+        {
+            speedLevel += 1;
+            playerSpeed += 0.2f;
+            //coinCount = currCoin - Speedcost;
+            currCoin -= Speedcost;
+            PlayerPrefs.SetInt("coin", currCoin);
+            Speedcost += 5;
+            PlayerPrefs.SetFloat("PlayerSpeeds", playerSpeed);
+            PlayerPrefs.SetFloat("speedLevel", speedLevel);
+            PlayerPrefs.SetInt("speedCost", Speedcost);
+        }else if (currCoin < Speedcost)
+        {
+            Debug.Log("Uang tidak cukup, kamu terlalu miskin");
+        }
+        
 
     }
 
     public void efficiencyUpgrade()
     {
-        efficiencyLevel += 1;
-        playerEfficiency -= 0.2f;
-        currCoin -= efficiencycost;
-        PlayerPrefs.SetInt("coin", currCoin);
-        efficiencycost += 5;
-        PlayerPrefs.SetFloat("PlayerEfficiencys", playerEfficiency);
-        PlayerPrefs.SetFloat("efficiencyLevel", efficiencyLevel);
-        PlayerPrefs.SetInt("efficiencycost", efficiencycost);
+        if (currCoin >= efficiencycost)
+        {
+            efficiencyLevel += 1;
+            playerEfficiency -= 0.2f;
+            currCoin -= efficiencycost;
+            PlayerPrefs.SetInt("coin", currCoin);
+            efficiencycost += 5;
+            PlayerPrefs.SetFloat("PlayerEfficiencys", playerEfficiency);
+            PlayerPrefs.SetFloat("efficiencyLevel", efficiencyLevel);
+            PlayerPrefs.SetInt("efficiencycost", efficiencycost);
+        }else if (currCoin < efficiencycost)
+        {
+            Debug.Log("Uang tidak cukup, kamu terlalu miskin");
+        }
     }
 
     public void medical()
     {
-        medicalLevel += 1;
-        playerMedical -= 0.2f;
-        currCoin -= medicalcost;
-        PlayerPrefs.SetInt("coin", currCoin);
-        medicalcost += 5;
-        PlayerPrefs.SetFloat("PlayerMedicals", playerMedical);
-        PlayerPrefs.SetFloat("medicalLevel", medicalLevel);
-        PlayerPrefs.SetInt("medicalcost", medicalcost);
+
+        if (currCoin >= medicalcost)
+        {
+            medicalLevel += 1;
+            playerMedical -= 0.2f;
+            currCoin -= medicalcost;
+            PlayerPrefs.SetInt("coin", currCoin);
+            medicalcost += 5;
+            PlayerPrefs.SetFloat("PlayerMedicals", playerMedical);
+            PlayerPrefs.SetFloat("medicalLevel", medicalLevel);
+            PlayerPrefs.SetInt("medicalcost", medicalcost);
+        }else if (currCoin < medicalcost)
+        {
+            Debug.Log("Uang tidak cukup, kamu terlalu miskin");
+        }
     }
 
     public void pharmacy()
     {
-        pharmacyLevel += 1;
-        playerPharmacy -= 0.2f;
-        currCoin -= pharmacycost;
-        PlayerPrefs.SetInt("coin", currCoin);
-        pharmacycost += 5;
-        PlayerPrefs.SetFloat("PlayerPharmacys", playerPharmacy);
-        PlayerPrefs.SetFloat("pharmacyLevel", pharmacyLevel);
-        PlayerPrefs.SetInt("pharmacycost", pharmacycost);
+        
+        if (currCoin >= pharmacycost)
+        {
+            pharmacyLevel += 1;
+            playerPharmacy -= 0.2f;
+            currCoin -= pharmacycost;
+            PlayerPrefs.SetInt("coin", currCoin);
+            pharmacycost += 5;
+            PlayerPrefs.SetFloat("PlayerPharmacys", playerPharmacy);
+            PlayerPrefs.SetFloat("pharmacyLevel", pharmacyLevel);
+            PlayerPrefs.SetInt("pharmacycost", pharmacycost);
+        }else if (currCoin < pharmacycost)
+        {
+            Debug.Log("Uang tidak cukup, kamu terlalu miskin");
+        }
 
     }
 
     public void chemistry()
     {
-        chemistryLevel += 1;
-        playerChemistry -= 0.2f;
-        currCoin -= chemistrycost;
-        PlayerPrefs.SetInt("coin", currCoin);
-        chemistrycost += 5;
-        PlayerPrefs.SetFloat("PlayerChemistrys", playerChemistry);
-        PlayerPrefs.SetFloat("chemistryLevel", chemistryLevel);
-        PlayerPrefs.SetInt("chemistrycost", chemistrycost);
+        if (currCoin >= chemistrycost)
+        {
+            chemistryLevel += 1;
+            playerChemistry -= 0.2f;
+            currCoin -= chemistrycost;
+            PlayerPrefs.SetInt("coin", currCoin);
+            chemistrycost += 5;
+            PlayerPrefs.SetFloat("PlayerChemistrys", playerChemistry);
+            PlayerPrefs.SetFloat("chemistryLevel", chemistryLevel);
+            PlayerPrefs.SetInt("chemistrycost", chemistrycost);
+        }else if (currCoin < chemistrycost)
+        {
+            Debug.Log("Uang tidak cukup, kamu terlalu miskin");
+        }
     }
 
     public void backk()

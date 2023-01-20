@@ -5,6 +5,7 @@ using UnityEngine;
 public class patientSpawner : MonoBehaviour
 {
     public GameObject patient;
+    public AudioSource pain;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class patientSpawner : MonoBehaviour
 
     public void spawnPatient()
     {
+        pain.Play();
         Instantiate(patient, gameObject.transform.position, Quaternion.identity);
     }
 }

@@ -34,6 +34,8 @@ public class couldron : MonoBehaviour
 
     public GameObject player;
 
+    public GameObject brewingUIDelay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,8 +99,10 @@ public class couldron : MonoBehaviour
         boilSFX.Play();
         player.GetComponent<PlayerMovement>().enabled = false;
         mixing.SetActive(true);
+        brewingUIDelay.SetActive(true);
         Debug.Log("Boiling the powder....");
         yield return new WaitForSeconds(boilingTime);
+        brewingUIDelay.SetActive(false);
         boilSFX.Stop();
         player.GetComponent<PlayerMovement>().enabled = true;
         mixing.SetActive(false);

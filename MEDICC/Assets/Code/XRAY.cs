@@ -15,8 +15,11 @@ public class XRAY : MonoBehaviour
 
     public float checkingTime;
 
+    public GameObject xrayUI;
+
     private void Start()
     {
+        xrayUI = GameObject.FindWithTag("x-ray");
         checkingTime = PlayerPrefs.GetFloat("PlayerMedicals");
         player = GameObject.FindWithTag("Player");
         homePoint = GameObject.FindWithTag("xrayHomePoint").transform;
@@ -53,7 +56,9 @@ public class XRAY : MonoBehaviour
     {
         xrayTest();
         player.GetComponent<PlayerMovement>().enabled = false;
+        xrayUI.GetComponent<pcrDelayUi>().turnON();
         yield return new WaitForSeconds(checkingTime);
+        xrayUI.GetComponent<pcrDelayUi>().turnOFF();
         player.GetComponent<PlayerMovement>().enabled = true;
         player.transform.position = homePoint.position;
         diagnozeResult(3);

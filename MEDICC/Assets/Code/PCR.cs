@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEditor.Experimental.GraphView.GraphView;
@@ -17,9 +18,12 @@ public class PCR : MonoBehaviour
 
     public GameObject patient;
 
+    public GameObject pcrUIDelay;
+
 
     private void Start()
     {
+        pcrUIDelay = GameObject.FindWithTag("pcrLab");
         checkingTime = PlayerPrefs.GetFloat("PlayerMedicals");
         player = GameObject.FindWithTag("Player");
         homePoint = GameObject.FindWithTag("pcrHomePoint").transform;
@@ -63,7 +67,9 @@ public class PCR : MonoBehaviour
     {
         pcrTest();
         player.GetComponent<PlayerMovement>().enabled = false;
+        pcrUIDelay.GetComponent<pcrDelayUi>().turnON();
         yield return new WaitForSeconds(checkingTime);
+        pcrUIDelay.GetComponent<pcrDelayUi>().turnOFF();
         player.GetComponent<PlayerMovement>().enabled = true;
         player.transform.position = homePoint.position;
         diagnozeResult(3);

@@ -11,6 +11,10 @@ public class drinkYellow : MonoBehaviour
 
     public GameObject patientSpawner;
     public GameObject counter;
+
+    public GameObject skin;
+    public GameObject potionCanvas;
+    public AudioSource HEALED;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,18 +63,19 @@ public class drinkYellow : MonoBehaviour
 
             counter.GetComponent<counter>().addCount();
             Debug.Log("Pasien Sembuh");
-            //StartCoroutine(delaySpawn());
-            gameObject.SetActive(false);
-
-            patientSpawner.GetComponent<patientSpawner>().spawnPatient();
-            
+            StartCoroutine(delaySpawn());
+           
 
         }
     }
 
     private IEnumerator delaySpawn()
     {
-        yield return new WaitForSeconds(5);
+        skin.SetActive(false);
+        HEALED.Play();
+        potionCanvas.SetActive(false);
+        yield return new WaitForSeconds(20);
+        gameObject.SetActive(false);
         patientSpawner.GetComponent<patientSpawner>().spawnPatient();
     }
 

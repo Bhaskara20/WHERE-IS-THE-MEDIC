@@ -53,6 +53,12 @@ public class Patient : MonoBehaviour
     public AudioSource tensiPump;
     public AudioSource heartBeat;
 
+    public GameObject tensiUIDelay;
+    public GameObject thermoUIDelay;
+    public GameObject stetoUIDelay;
+
+    public GameObject diagnoze;
+
     //public GameObject text;
 
     //public GameObject holder;
@@ -168,7 +174,11 @@ public class Patient : MonoBehaviour
     {
         Player.GetComponent<PlayerMovement>().enabled = false;
         tensiPump.Play();
+        diagnoze.SetActive(false);
+        tensiUIDelay.SetActive(true);
         yield return new WaitForSeconds(checkingTime);
+        tensiUIDelay.SetActive(false);
+        diagnoze.SetActive(true);
         tensiPump.Stop();
         Player.GetComponent<PlayerMovement>().enabled = true;
         //tensibar.SetActive(true);
@@ -181,7 +191,11 @@ public class Patient : MonoBehaviour
     private IEnumerator delayThermo()
     {
         Player.GetComponent<PlayerMovement>().enabled = false;
+        thermoUIDelay.SetActive(true);
+        diagnoze.SetActive(false);
         yield return new WaitForSeconds(checkingTime);
+        diagnoze.SetActive(true);
+        thermoUIDelay.SetActive(false);
         thermoBeep.Play();
         Player.GetComponent<PlayerMovement>().enabled = true;
         thermoChecked = true;
@@ -193,7 +207,11 @@ public class Patient : MonoBehaviour
     {
         Player.GetComponent<PlayerMovement>().enabled = false;
         heartBeat.Play();
+        diagnoze.SetActive(false);
+        stetoUIDelay.SetActive(true);
         yield return new WaitForSeconds(checkingTime);
+        stetoUIDelay.SetActive(false);
+        diagnoze.SetActive(true);
         heartBeat.Stop();
         Player.GetComponent<PlayerMovement>().enabled = true;
         stetosChecked = true;

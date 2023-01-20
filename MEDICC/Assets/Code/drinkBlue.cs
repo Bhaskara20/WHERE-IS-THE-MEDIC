@@ -17,6 +17,10 @@ public class drinkBlue : MonoBehaviour
 
     public int coinCount;
 
+    public GameObject skin;
+    public GameObject potionCanvas;
+    public AudioSource HEALED;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,11 +76,13 @@ public class drinkBlue : MonoBehaviour
             //PlayerPrefs.SetInt("coin", coinCount);
 
             Debug.Log("Pasien Sembuh");
-            gameObject.SetActive(false);
+            StartCoroutine(delaySpawn());
+            //StartCoroutine(delaySpawn());
+            //gameObject.SetActive(false);
 
 
             //StartCoroutine(delaySpawn());
-            patientSpawner.GetComponent<patientSpawner>().spawnPatient();
+            //patientSpawner.GetComponent<patientSpawner>().spawnPatient();
 
 
         }
@@ -84,7 +90,11 @@ public class drinkBlue : MonoBehaviour
 
     private IEnumerator delaySpawn()
     {
-        yield return new WaitForSeconds(5);
+        skin.SetActive(false);
+        HEALED.Play();
+        potionCanvas.SetActive(false);
+        yield return new WaitForSeconds(20);
+        gameObject.SetActive(false);
         patientSpawner.GetComponent<patientSpawner>().spawnPatient();
     }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,9 +15,12 @@ public class bloodTest : MonoBehaviour
 
     public float checkingTime;
 
+    public GameObject bloodUI;
+
 
     private void Start()
     {
+        bloodUI = GameObject.FindWithTag("bloodLab");
         checkingTime = PlayerPrefs.GetFloat("PlayerMedicals"); ;
         player = GameObject.FindWithTag("Player");
         homePoint = GameObject.FindWithTag("bloodLabHomePoint").transform;
@@ -51,7 +55,9 @@ public class bloodTest : MonoBehaviour
     {
         blooodTest();
         player.GetComponent<PlayerMovement>().enabled = false;
+        bloodUI.GetComponent<pcrDelayUi>().turnON();
         yield return new WaitForSeconds(checkingTime);
+        bloodUI.GetComponent<pcrDelayUi>().turnOFF();
         player.GetComponent<PlayerMovement>().enabled = true;
         player.transform.position = homePoint.position;
         diagnozeResult(3);
