@@ -5923,7 +5923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eed34cfbecbc264da1066388face7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patient: {fileID: 2613639277748053054, guid: 25282fcfdc8bd8946b710e6533fa8187, type: 3}
+  patient: {fileID: 2613639277748053054, guid: f6f7d53cc8d1f2f4ebe371a2f5275356, type: 3}
   pain: {fileID: 686243259}
 --- !u!136 &686243255
 CapsuleCollider:
@@ -8544,7 +8544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eed34cfbecbc264da1066388face7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patient: {fileID: 2613639277748053054, guid: 19994a91673f08143b3a929c26e64f5c, type: 3}
+  patient: {fileID: 2613639277748053054, guid: d303e191d5014fb4293ae1f3a19ab506, type: 3}
   pain: {fileID: 852788125}
 --- !u!82 &852788125
 AudioSource:
@@ -23861,7 +23861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eed34cfbecbc264da1066388face7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patient: {fileID: 2613639277748053054, guid: 9118ea0785fa76e4fbe4d62b2dcc2103, type: 3}
+  patient: {fileID: 2613639277748053054, guid: b1ce93b59e1c528459b69f85b34584d2, type: 3}
   pain: {fileID: 2099245434}
 --- !u!136 &2099245430
 CapsuleCollider:

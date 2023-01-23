@@ -16,6 +16,11 @@ public class naikKasur : MonoBehaviour
     public GameObject thermoIcon;
     public GameObject stetosIcon;
 
+    public GameObject AnimasiJalan;
+    public GameObject AnimasiTidur;
+
+    public bool gone;
+
     public bool once;
     //public GameObject sleepposs;
 
@@ -39,6 +44,17 @@ public class naikKasur : MonoBehaviour
         {
             this.transform.position = sleepPos.position;
             this.transform.rotation = sleepPos.rotation;
+
+            if (gone == false)
+            {
+                AnimasiJalan.SetActive(false);
+                AnimasiTidur.SetActive(true);
+            }else if(gone == true)
+            {
+                AnimasiJalan.SetActive(false);
+                AnimasiTidur.SetActive(false);
+            }
+            
             this.GetComponent<PatientAI>().enabled = false;
 
             if (once == false)

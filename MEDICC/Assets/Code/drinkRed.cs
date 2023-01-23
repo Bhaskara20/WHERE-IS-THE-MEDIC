@@ -73,6 +73,7 @@ public class drinkRed : MonoBehaviour
 
     private IEnumerator delaySpawn()
     {
+        gameObject.GetComponent<naikKasur>().gone = true;
         skin.SetActive(false);
         HEALED.Play();
         potionCanvas.SetActive(false);
