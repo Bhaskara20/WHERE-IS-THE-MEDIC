@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: daadf0c0c1525a74592328b9e973175d
   - enabled: 1
+    path: Assets/Scenes/StageSelection.unity
+    guid: 1a70c4b60161caa4e8c06b7e9497cc3d
+  - enabled: 0
     path: Assets/Scenes/Stage1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -16,32 +19,53 @@ EditorBuildSettings:
     guid: 8c90472623da4e5469d0fade263bf841
   - enabled: 1
     path: Assets/Scenes/Day2.unity
-    guid: b26760015059f9a4f901a99008b85f6a
+    guid: d61f212fa8516ac4caed8a5295d37be8
   - enabled: 1
     path: Assets/Scenes/Day3.unity
-    guid: 44455ec120c6cff4cb74fd990012bbef
+    guid: 0fbf53634b4c8764c89fd6bbb67e03c4
   - enabled: 1
     path: Assets/Scenes/Day4.unity
     guid: a31e8ed6503e91f4c80e6ab955cacd14
+  - enabled: 1
+    path: Assets/Scenes/Day5.unity
+    guid: c7fd9ee9dc8e6964d8069748a472bd09
+  - enabled: 1
+    path: Assets/Scenes/Day6.unity
+    guid: 607706bab8796dc4494a3e1738f6ce65
+  - enabled: 1
+    path: Assets/Scenes/Day7.unity
+    guid: 82de63534564a43408efac4e2f2b3e90
+  - enabled: 1
+    path: Assets/Scenes/Day8.unity
+    guid: 7762f8ef1fcf02b468ecc3dbf9d65abf
+  - enabled: 1
+    path: Assets/Scenes/Day9.unity
+    guid: b551d3004f35799408285e7190c1e793
+  - enabled: 1
+    path: Assets/Scenes/Day10.unity
+    guid: 5f1288fb36f3814408e8de58f81b8ebf
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/StageSelection.unity
-    guid: 1a70c4b60161caa4e8c06b7e9497cc3d
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
