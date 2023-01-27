@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-[ExecuteInEditMode]
+/*[ExecuteInEditMode]
 public class dataRemover : EditorWindow
 {
     [MenuItem("Tools/data Remover")]
@@ -12,3 +12,4 @@ public class dataRemover : EditorWindow
     }
     
 }
+*/
