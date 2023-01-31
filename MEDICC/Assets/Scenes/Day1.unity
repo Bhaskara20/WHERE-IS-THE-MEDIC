@@ -2846,6 +2846,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &399708834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 399708834, guid: 6a6578e101d95c0418c6ed900e7e845a, type: 3}
+  m_PrefabInstance: {fileID: 153227835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &401077771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12637,6 +12648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1322985830}
+  goalText: {fileID: 399708834}
   timerFix: 300
   finish: {fileID: 1279040764}
   failed: {fileID: 188520828}

@@ -34,5 +34,6 @@ public class mainMenus : MonoBehaviour
     public void endProgram()
     {
         //Debug.Log("Exit");
+        Application.Quit();
     }
 }

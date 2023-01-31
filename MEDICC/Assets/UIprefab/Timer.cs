@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timer;
+    public TextMeshProUGUI goalText;
+
     public float timerFix = 10;
     private bool timerCountdown;
 
@@ -41,6 +43,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        goalText.text = "Goal : " + goal.ToString();
         if (timerCountdown)
         {
             timerFix -= Time.deltaTime;
